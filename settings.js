@@ -34,7 +34,6 @@ global.APIKeys = {
 	'https://zenzapis.xyz': 'your key',
 }
 
-global.xteam = 'RiyGanz'
 
 //aumto functioner
 global.autoTyping = false //auto tying in gc (true to on, false to off)
