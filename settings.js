@@ -61,7 +61,7 @@ global.socialm = "Gw: https://chat.whatsapp.com/EXHZ7eLsuImFKYdu3wrUZ4" //ur git
 global.location = "República de AQP" //ur location
 
 //bot bomdy 
-global.owner = ['17743750552']
+global.owner = ['522285262918']
 global.ownertag = '51931263982' //ur tag number
 global.botname = 'ROCKET🚀' //ur bot name
 global.linkz = "https://chat.whatsapp.com/EXHZ7eLsuImFKYdu3wrUZ4" //your theme url which will be displayed on whatsapp
@@ -79,7 +79,7 @@ global.err4r = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur error pic
 global.thumb = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur thumb pic
 
 //damtabase
-global.premium = ['916909137213'] //ur premium numbers
+global.premium = ['51931263982'] //ur premium numbers
 global.ntilinkytvid = []
 global.ntilinkytch = []
 global.ntilinkig = []
