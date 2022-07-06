@@ -54,23 +54,23 @@ global.doc5 = 'application/pdf'
 global.doc6 = 'application/vnd.android.package-archive'
 
 //owmner v card
-global.vcardowner = ['916909137213'] //ur owner number
-global.ownername = "🦄Dream Guy Xeon" //ur owner name
-global.ytname = "YT: Xeon" //ur yt chanel name
-global.socialm = "GitHub: DGXeon" //ur github or insta name
-global.location = "India, Mizoram, Aizawl" //ur location
+global.vcardowner = ['51931263982'] //ur owner number
+global.ownername = "Viggo Tarasov" //ur owner name
+global.ytname = "YT: DGXeon" //ur yt chanel name
+global.socialm = "Gw: https://chat.whatsapp.com/EXHZ7eLsuImFKYdu3wrUZ4" //ur github or insta name
+global.location = "República de AQP" //ur location
 
 //bot bomdy 
-global.owner = ['916909137213']
-global.ownertag = '916909137213' //ur tag number
-global.botname = 'Cheems Bot MD V4' //ur bot name
-global.linkz = "https://youtu.be/WiIqCdiDjFo" //your theme url which will be displayed on whatsapp
-global.websitex = "https://youtu.be/WiIqCdiDjFo" //ur website to be displayed
-global.botscript = 'https://github.com/DGXeon/CheemsBot-MD4' //script link
-global.reactmoji = "😘" //ur menu react emoji
-global.themeemoji = "🦄" //ur theme emoji
-global.packname = "Cheems Bot Stickers\n\n\n\n\n\n\n\n\n\n\n🦄🦄🦄 " //ur sticker watermark packname
-global.author = "🦄Dream Guy Xeon" //ur sticker watermark author
+global.owner = ['17743750552']
+global.ownertag = '51931263982' //ur tag number
+global.botname = 'ROCKET🚀' //ur bot name
+global.linkz = "https://chat.whatsapp.com/EXHZ7eLsuImFKYdu3wrUZ4" //your theme url which will be displayed on whatsapp
+global.websitex = "https://chat.whatsapp.com/EXHZ7eLsuImFKYdu3wrUZ4" //ur website to be displayed
+global.botscript = 'https://chat.whatsapp.com/EXHZ7eLsuImFKYdu3wrUZ4' //script link
+global.reactmoji = "🚀" //ur menu react emoji
+global.themeemoji = "🚀" //ur theme emoji
+global.packname = "ROCKET🚀.\n\n\n\n\n\n\n\n\n\n\nTodo lo que alguna vez deseaste está del otro lado del miedo.VIGGO😎😈 " //ur sticker watermark packname
+global.author = "VIGGO😎😈" //ur sticker watermark author
 
 //Bot theme media
 global.thum = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur thumb pic
@@ -106,19 +106,19 @@ global.prefa = ['','!','.','🐦','🐤','🗿']
 global.sp = '⭔'
 global.mess = {
     success: 'Done ✓',
-    admin: 'This Feature Is Only For Admin!',
-    botAdmin: 'Bot Must Be Admin First!',
-    owner: 'This Feature Is Only For Owner!',
-    group: 'Feature Used Only For Groups!',
-    private: 'Features Used Only For Private Chat!',
-    bot: 'This Feature Is Only For Bot',
-    wait: 'In process...',
+    admin: '❌ SILENCIO MIEMBRO COMÚN NO TIENE MORAL PARA USAR ESTE COMANDO ❌',
+    botAdmin: '¡CÓMO CARAJOS VOY HACER ESO, SI NO SOY ADMIN🤦🏻‍♂️!!!',
+    owner: '❌ ¡Este comando solo puede usar mi jefe! ❌',
+    group: '¡Esta característica es solo para grupos!',
+    private: '¡Esta función es solo para chats privados!',
+    bot: '❌ Solo yo puedo usar esta función',
+    wait: 'En proceso...',
     linkm: 'Where is the link?',
-    error: 'Error!!',
-    endLimit: 'Your Daily Limit Has Expired, The Limit Will Be Reset Every 12 Hours',
-    ban: 'You have been banned by the owner, if you want to be unbanned, chat owner.',
-    nsfw: 'The nsfw feature has not been activated, please contact the admin to activate',
-    banChat: 'The bot was banned in this group, please contact the owner to unban'
+    error: 'Error!! Será para la proxima o nunca...',
+    endLimit: 'Su límite diario ha expirado, el límite se restablecerá cada 12 horas',
+    ban: 'Has sido baneado por el BOT, si quieres que no te baneen, chatea con el dueño del grupo',
+    nsfw: 'La función nsfw no se ha activado PAJERO‼️, comuníquese con el administrador para activarla',
+    banChat: 'El bot fue apagado en este grupo, comuníquese con el propietario para reiniciar'
 }
     global.limitawal = {
     premium: "Infinity",
