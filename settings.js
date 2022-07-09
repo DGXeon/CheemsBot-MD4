@@ -54,39 +54,38 @@ global.doc5 = 'application/pdf'
 global.doc6 = 'application/vnd.android.package-archive'
 
 //owmner v card
-global.vcardowner = ['916909137213'] //ur owner number
-global.ownername = "🦄Dream Guy Xeon" //ur owner name
-global.ytname = "YT: Xeon" //ur yt chanel name
-global.socialm = "GitHub: DGXeon" //ur github or insta name
-global.location = "India, Mizoram, Aizawl" //ur location
+global.vcardowner = ['923053891157'] //ur owner number
+global.ownername = "🍫chocolate" //ur owner name
+global.ytname = "YT: 😂" //ur yt chanel name
+global.socialm = "GitHub: 😂" //ur github or insta name
+global.location = "pakistan, sindh, dadul" //ur location
 
 //bot bomdy 
-global.owner = ['916909137213']
-global.ownertag = '916909137213' //ur tag number
-global.botname = 'Cheems Bot MD V4' //ur bot name
-global.linkz = "https://youtu.be/WiIqCdiDjFo" //your theme url which will be displayed on whatsapp
-global.websitex = "https://youtu.be/WiIqCdiDjFo" //ur website to be displayed
-global.botscript = 'https://github.com/DGXeon/CheemsBot-MD4' //script link
+global.owner = ['923053891157']
+global.ownertag = '923053891157' //ur tag number
+global.botname = 'Chocolaty bot' //ur bot name
+global.linkz = "https:/😂" //your theme url which will be displayed on whatsapp
+global.websitex = "https:/😂" //ur website to be displayed
+global.botscript = 'https://lol 😂' //script link
 global.reactmoji = "😘" //ur menu react emoji
-global.themeemoji = "🦄" //ur theme emoji
-global.packname = "Cheems Bot Stickers\n\n\n\n\n\n\n\n\n\n\n🦄🦄🦄 " //ur sticker watermark packname
-global.author = "🦄Dream Guy Xeon" //ur sticker watermark author
+global.themeemoji = "🍫" //ur theme emoji
+global.packname = "chocolate Bot Stickers\n\n\n\n\n\n\n\n\n\n\n🍫🍫🍫 " //ur sticker watermark packname
+global.author = "🍫chocolate" //ur sticker watermark author
 
 //Bot theme media
-global.thum = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur thumb pic
-global.log0 = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur logo pic
-global.err4r = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur error pic
-global.thumb = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur thumb pic
+global.thum = fs.readFileSync("./https://i.imgur.com/APlqWpN.jpeg") //ur logo pic
+global.err4r = fs.readFileSync("./https://i.imgur.com/APlqWpN.jpeg") //ur error pic
+global.thumb = fs.readFileSync("./https://i.imgur.com/APlqWpN.jpeg") //ur thumb pic
 
 //damtabase
-global.premium = ['916909137213'] //ur premium numbers
+global.premium = ['923053891157'] //ur premium numbers
 global.ntilinkytvid = []
 global.ntilinkytch = []
 global.ntilinkig = []
 global.ntilinkfb = []
 global.ntilinktg = []
 global.ntilinktt = []
-global.ntilinktwt = []
+global.ntilinktwt = [true]
 global.ntilinkall = []
 global.nticall = []
 global.ntwame = []
