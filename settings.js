@@ -18,7 +18,7 @@
 //i give permission to do as long as you
 //put Xeons youtube channel link in the video
 //description and tag me on githuh repo, 
-//thank you🦄
+//thank you🌚
 //════════════════════════════//
 
 const fs = require('fs')
