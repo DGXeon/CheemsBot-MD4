@@ -8832,141 +8832,141 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                     footerText: `${global.botname}`,
                     listType: "SINGLE_SELECT",
                     sections: [{
-								"title": "Initial Features Of Bot 🦄",
+								"title": "Características iniciais do bot 💧",
 								"rows": [
 									{
-										"title": "Other ☕",
-										"description": "Displays The List Of Other Features",
+										"title": "Outros ☕",
+										"description": "Exibe a lista de outros recursos",
 										"rowId": `${prefix}othermenu`
 									}
 								]
 							},
 							{
-								"title": "Bot Features ❤️",
+								"title": "Recursos do bot ❤️",
 								"rows": [
 									{
-										"title": "All Menu 🥀",
-										"description": "Displays The List Of All The Features!",
+										"title": "Menu Completo📝",
+										"description": "Exibe a lista de todos os recursos!",
 										"rowId": `${prefix}allmenu`
 									},
 									{
-										"title": "Owner Menu 💠",
-										"description": "Displays The List Of Owner Features",
+										"title": "Menu do Criador💠",
+										"description": "Exibe a lista de recursos do proprietário",
 										"rowId": `${prefix}ownermenu`
 										},
 									{
-										"title": "Group Menu ✨",
-										"description": "Displays The List Of Main Features",
+										"title": "Menu do Grupo ✨",
+										"description": "Exibe a lista de recursos principais",
 										"rowId": `${prefix}groupmenu`
 										},
 										{
-										"title": "Maker Menu 🌈",
-										"description": "Displays The List Of Logo Making Features",
+										"title": "Menu do Maker 🌈",
+										"description": "Exibe a lista de recursos de criação de logotipo",
 										"rowId": `${prefix}indomenu`
 									},
 									{
-										"title": "Sound Menu 🎵",
-										"description": "Displays The List Of Sound Features",
+										"title": "Menu de sons 🎵",
+										"description": "Exibe a lista de recursos de som",
 										"rowId": `${prefix}soundmenu`
 									},
 									{
-										"title": "Download Menu ↘️",
-										"description": "Displays The List Of Download Features",
+										"title": "Menu de Downloads ↘️",
+										"description": "Exibe a lista de recursos de download",
 										"rowId": `${prefix}downloadmenu`
 									},
 									{
-										"title": "Sticker Menu 🃏",
-										"description": "Displays The List Of Sticker Features",
+										"title": "Menu de Figurinhas🃏",
+										"description": "Exibe a lista de recursos de figurinhas",
 										"rowId": `${prefix}indomenu`
 									},
 									{
-										"title": "Search Menu 🔎",
-										"description": "Displays The List Of Searching Features",
+										"title": "Menu de Pesquisa 🔎",
+										"description": "Exibe a lista de recursos de pesquisa",
 										"rowId": `${prefix}searchmenu`
 									},
 									{
-										"title": "Tool Menu ⚙️",
-										"description": "Displays The List Of Tool Features",
+										"title": "Menu de Ferramentas ⚙️",
+										"description": "Exibe a lista de recursos da ferramenta",
 										"rowId": `${prefix}toolmenu`
 									},
 									{
-										"title": "Random Image Menu 🌆",
-										"description": "Displays The List Of Random Image Features",
+										"title": "Menu de Imagem Aleatória 🌆",
+										"description": "Exibe a lista de recursos de imagem aleatória",
 										"rowId": `${prefix}randomimagemenu`
 									},
 									{
-										"title": "Image Effect Menu 🖼️",
-										"description": "Displays The List Of Image Effect Features",
+										"title": "Menu Efeito de Imagem 🖼️",
+										"description": "Exibe a lista de recursos de efeito de imagem",
 										"rowId": `${prefix}imageeffectmenu`
 									},
 										{
-											"title": "Anime Menu 😘",
-										"description": "Displays The List Of Random Anime Features",
+											"title": "Menu de Anime 😘",
+										"description": "Exibe a lista de recursos de anime",
 										"rowId": `${prefix}animemenu`
 										},
 										{
-											"title": "Emote Menu 😀",
-										"description": "Displays The List Of Emote Features",
+											"title": "Menu de Emotes 😀",
+										"description": "Exibe a lista de recursos de emote",
 										"rowId": `${prefix}emotemenu`
 										},
 										{
-										"title": "Anime Sticker Menu ☺️",
-										"description": "Displays The List Of Anime Sticker Features",
+										"title": "Menu de Figurinhas Anime ☺️",
+										"description": "Exibe a lista de recursos de figurinhas de anime",
 										"rowId": `${prefix}animestickermenu`
 									     },
 									{
-										"title": "Nsfw Menu 🤓",
-										"description": "Displays The List Of Nsfe Features",
+										"title": "Menu Nsfw 🤓",
+										"description": "Exibe a lista de recursos Nsfw",
 										"rowId": `${prefix}nsfwmenu`
 									     },
 										{
-											"title": "Fun Menu 🕺",
-										"description": "Displays The List Of Fun Features",
+											"title": "Menu de Diversão🕺",
+										"description": "Exibe a lista de recursos divertidos",
 										"rowId": `${prefix}funmenu`
 										},
 										{
-										"title": "Game Menu 🎮",
-										"description": "Displays The List Of Game Features",
+										"title": "Menu de Jogos🎮",
+										"description": "Exibe a lista de recursos do jogo",
 										"rowId": `${prefix}indomenu`
 									},
 										{
-											"title": "Convert Menu ⚒️",
-										"description": "Displays The List Of Convert Features",
+											"title": "Menu de Converter ⚒️",
+										"description": "Exibe a lista de recursos de conversão",
 										"rowId": `${prefix}convertmenu`
 										},
 										{
-											"title": "Database Menu ♻️",
-										"description": "Displays The List Of Database Features",
+											"title": "Menu Database ♻️",
+										"description": "Exibe a lista de recursos do banco de dados",
 										"rowId": `${prefix}databasemenu`
 										},
 										{
-										"title": "Indo Menu  🦜",
-										"description": "Displays The List Of Indo Features",
+										"title": "Menu Indo 🦜",
+										"description": "Exibe a lista de recursos Indo",
 										"rowId": `${prefix}indomenu`
 									},
 										{
-											"title": "Horoscope Menu 🕊️",
-										"description": "Displays The List Of Horoscope Features",
+											"title": "Menu Horóscopo 🕊️",
+										"description": "Exibe a lista de recursos do horóscopo",
 										"rowId": `${prefix}indohoroscopemenu`
 										}
 								]
 							},
 							{
-								"title": "Chat With Fellow Users 🌝",
+								"title": "Converse com outros usuários 🌝",
 								"rows": [
 									{
-										"title": "Anonymous Chat Menu 🙎🏻‍♂️",
-										"description": "Displays The List Of Anonymous Chat Features",
+										"title": "Menu de bate-papo anônimo 🙎🏻‍♂️",
+										"description": "Exibe a lista de recursos de bate-papo anônimo",
 										"rowId": `${prefix}anonymousmenu`
 									}
 								]
 							},
 							{
-								"title": "Credit ©️",
+								"title": "Creditos ©️",
 								"rows": [
 									{
 										"title": "Thanks To ❤️",
-										"description": "Displays The List Of Credit Of The Bot !!",
+										"description": "Exibe a lista de créditos do bot !!",
 										"rowId": `${prefix}tqtt`
 									}
 								]
