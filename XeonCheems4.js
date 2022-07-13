@@ -1637,16 +1637,16 @@ if (isBanChat) return reply(mess.banChat)
             let poin = 10
             let poin_lose = 10
             let timeout = 60000
-            if (Object.values(this.suit).find(roof => roof.id.startsWith('suit') && [roof.p, roof.p2].includes(m.sender))) return replay(`Complete Your Previous Suit`)
+            if (Object.values(this.suit).find(roof => roof.id.startsWith('suit') && [roof.p, roof.p2].includes(m.sender))) return replay(`Termine a partida anterior`)
 	    if (m.mentionedJid[0] === m.sender) return reply(`Can't Play With Myself !`)
-            if (!m.mentionedJid[0]) return reply(`_Who Do You Want To Challenge?_\nTag The Person..\n\nExample : ${prefix}suit @${owner[1]}`, m.chat, { mentions: [owner[1] + '@s.whatsapp.net'] })
-            if (Object.values(this.suit).find(roof => roof.id.startsWith('suit') && [roof.p, roof.p2].includes(m.mentionedJid[0])))  reply(`The Person You Are Challenging Is Playing Suit With Someone Else :(`)
+            if (!m.mentionedJid[0]) return reply(`_Quem você quer desafiar?_\nMarque a pessoa..\n\nExemplo: ${prefix}suit @${owner[1]}`, m.chat, { mentions: [owner[1] + '@s.whatsapp.net'] })
+            if (Object.values(this.suit).find(roof => roof.id.startsWith('suit') && [roof.p, roof.p2].includes(m.mentionedJid[0])))  reply(`A pessoa que você está desafiando está jogando com outra pessoa :(`)
             let id = 'suit_' + new Date() * 1
             let caption = `_*SUIT PvP*_
 
 @${m.sender.split`@`[0]} menantang @${m.mentionedJid[0].split`@`[0]} To Play Suit
 
-Please @${m.mentionedJid[0].split`@`[0]} To Type Accept/Reject`
+Digite @${m.mentionedJid[0].split`@`[0]} _Accept/Reject_ para aceitar ou rejeitar`
             this.suit[id] = {
             chat: await XeonBotInc.sendText(m.chat, caption, m, { mentions: parseMention(caption) }),
             id: id,
@@ -1686,12 +1686,12 @@ if (isBanChat) return reply(mess.banChat)
 		if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
                 if ('family100'+m.chat in _family100) {
-                    reply('There Are Still Unfinished Sessions!')
+                    reply('Ainda há sessões inacabadas!')
                     reply(false)
                 }
                 let anu = await fetchJson('https://raw.githubusercontent.com/BochilTeam/database/master/games/family100.json')
                 let random = anu[Math.floor(Math.random() * anu.length)]
-                let hasil = `*Answer The Following Questions :*\n${random.soal}\n\nThere Is *${random.jawaban.length}* Answer ${random.jawaban.find(v => v.includes(' ')) ? `(Some Answers Have Spaces)` : ''}`.trim()
+                let hasil = `*Responda as seguintes questões :*\n${random.soal}\n\nHá *${random.jawaban.length}* Resposta ${random.jawaban.find(v => v.includes(' ')) ? `(Algumas respostas têm espaços)` : ''}`.trim()
                 _family100['family100'+m.chat] = {
                     id: 'family100'+m.chat,
                     pesan: await XeonBotInc.sendText(m.chat, hasil, m),
@@ -1704,7 +1704,7 @@ if (isBanChat) return reply(mess.banChat)
             case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh':
             if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
-            if (!m.quoted && !text) return replay(`Send/Reply Text With Caption ${prefix + command}`)
+            if (!m.quoted && !text) return replay(`Enviar/responder texto com ${prefix + command}`)
             ter = command[1].toLowerCase()
             tex = m.quoted ? m.quoted.text ? m.quoted.text : q ? q : m.text : q ? q : m.text
             reply(tex.replace(/[aiueo]/g, ter).replace(/[AIUEO]/g, ter.toUpperCase()))
@@ -1714,11 +1714,11 @@ case 'guess': {
 if (isBanChat) return reply(mess.banChat)
 if (!args.join(" ")) return replay(`Example : ${prefix + command} song\n\nOption : \n1.song\n2. picture\n3. saying\n4. sentence\n5. lyrics\n6.food`)
 if (args[0] === "song") {
-if (tebaklagu.hasOwnProperty(m.sender.split('@')[0])) return replay("There are still unfinished sessions!")
+if (tebaklagu.hasOwnProperty(m.sender.split('@')[0])) return replay("Ainda há sessões inacabadas!")
 let anu = await fetchJson('https://fatiharridho.github.io/tebaklagu.json')
 let result = anu[Math.floor(Math.random() * anu.length)]
 let msg = await XeonBotInc.sendMessage(m.chat, { audio: { url: result.link_song }, mimetype: 'audio/mpeg' }, { quoted: m })
-XeonBotInc.sendText(m.chat, `What is the name of this song?\n\nArtist : ${result.artist}\nTime : 60s`, msg).then(() => {
+XeonBotInc.sendText(m.chat, `Qual é o nome dessa música?\n\nArtista : ${result.artist}\nTime : 60s`, msg).then(() => {
 tebaklagu[m.sender.split('@')[0]] = result.jawaban.toLowerCase()
 })
 await sleep(60000)
