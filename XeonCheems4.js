@@ -2214,7 +2214,7 @@ case 'dare':
     "o que é um segredo que você manteve de seus pais",
     "Quem é sua paixão secreta",
     "quem é a última pessoa que você assustou nas redes sociais",
-    "Se um gênio lhe concedesse três desejos, o que você pediria?"
+    "Se um gênio lhe concedesse três desejos, o que você pediria?",
     "Qual é o seu maior arrependimento",
     "Com qual animal você acha que mais se parece",
     "Quantas selfies você tira por dia",
