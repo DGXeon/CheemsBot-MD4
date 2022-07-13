@@ -64,10 +64,10 @@ global.location = "Minas Gerais, Brasil" //ur location
 global.owner = ['553288416873']
 global.ownertag = '553288416873' //ur tag number
 global.botname = 'Agua Bot V2' //ur bot name
-global.linkz = "https://youtu.be/WiIqCdiDjFo" //your theme url which will be displayed on whatsapp
-global.websitex = "https://youtu.be/WiIqCdiDjFo" //ur website to be displayed
+global.linkz = "[...]" //your theme url which will be displayed on whatsapp
+global.websitex = "[...]" //ur website to be displayed
 global.botscript = 'https://github.com/Iury-Xavier/CheemsBot-MD4' //script link
-global.reactmoji = "😘" //ur menu react emoji
+global.reactmoji = "💧" //ur menu react emoji
 global.themeemoji = "💧" //ur theme emoji
 global.packname = "Agua Bot Stickers\n\n\n\n\n\n\n\n\n\n\n💧💧💧 " //ur sticker watermark packname
 global.author = "🔒Iury X." //ur sticker watermark author
@@ -102,7 +102,7 @@ global.ntilink = []
 //omther
 global.sessionName = 'session'
 global.antitags = true
-global.prefa = ['','#','!','.','🐦','🐤','🗿']
+global.prefa = ['','#','!','.','💧','🐤','🗿']
 global.sp = '⭔'
 global.mess = {
     success: 'Feito ✓',
