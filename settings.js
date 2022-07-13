@@ -63,7 +63,7 @@ global.location = "Minas Gerais, Brasil" //ur location
 //bot bomdy 
 global.owner = ['553288750638']
 global.ownertag = '553288750638' //ur tag number
-global.botname = 'Agua Bot V2' //ur bot name
+global.botname = 'Água Bot' //ur bot name
 global.linkz = "[...]" //your theme url which will be displayed on whatsapp
 global.websitex = "[...]" //ur website to be displayed
 global.botscript = 'https://github.com/Iury-Xavier/CheemsBot-MD4' //script link
@@ -102,7 +102,7 @@ global.ntilink = []
 //omther
 global.sessionName = 'session'
 global.antitags = true
-global.prefa = ['','#','!','.','💧','🐤','🗿']
+global.prefa = ['#','!','.','💧']
 global.sp = '⭔'
 global.mess = {
     success: 'Feito ✓',
