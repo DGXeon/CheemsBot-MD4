@@ -726,28 +726,28 @@ XeonBotInc.sendMessage(from, {text:`\`\`\`「 Link Detected 」\`\`\`\n\n@${kice
 }
 
                 //auto reply by xeon
-  //if (Autoreply) //remove forwad slashes to make it autoreply on off
+  if (Autoreply) //remove forwad slashes to make it autoreply on off
         for (let anji of xeonysticker){
-				//if (budy === anji){
-					//result = fs.readFileSync(`./XeonMedia/sticker/${anji}.webp`)
-					//XeonBotInc.sendMessage(m.chat, { sticker: result }, { quoted: m })
-					//}
+				if (budy === anji){
+					result = fs.readFileSync(`./XeonMedia/sticker/${anji}.webp`)
+					XeonBotInc.sendMessage(m.chat, { sticker: result }, { quoted: m })
+					}
 			}
-			  //if (Autoreply) //remove forwad slashes to make it autoreply on off
+			  if (Autoreply) //remove forwad slashes to make it autoreply on off
 			for (let anju of xeonyaudio){
 				if (budy === anju){
 					result = fs.readFileSync(`./XeonMedia/audio/${anju}.mp3`)
 					XeonBotInc.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })     
 					}
 			}
-			  //if (Autoreply) //remove forwad slashes to make it autoreply on off
+			  if (Autoreply) //remove forwad slashes to make it autoreply on off
 			for (let anjh of xeonyimage){
 				if (budy === anjh){
 					result = fs.readFileSync(`./XeonMedia/image/${anjh}.jpg`)
 					XeonBotInc.sendMessage(m.chat, { image: result }, { quoted: m })
 					}
 			}
-			  //if (Autoreply) //remove forwad slashes to make it autoreply on off
+			  if (Autoreply) //remove forwad slashes to make it autoreply on off
 					for (let anjh of xeonyvideo){
 				if (budy === anjh){
 					result = fs.readFileSync(`./XeonMedia/video/${anjh}.mp4`)
@@ -763,11 +763,11 @@ const emoji = new EmojiAPI();
 emoji.get(satu)
 .then(emoji => {
 const buttons = [{buttonId: "y", buttonText: {displayText:satu}, type: 1}]
-const buttonMessage = {image: {url: emoji.images[dua].url},caption: "Here you go!",footerText: `${botname}`,buttons: buttons,headerType: 4}
+const buttonMessage = {image: {url: emoji.images[dua].url},caption: "Aqui está!",footerText: `${botname}`,buttons: buttons,headerType: 4}
 XeonBotInc.sendMessage(from, buttonMessage, {quoted:m})
 })
 } catch (e) {
-reply("Emoji error, please enter another emoji\nNOTE : Just enter 1 emoji")
+reply("Erro de emoji, insira outro emoji\nOBSERVAÇÃO: basta inserir 1 emoji")
 }
 }
 
@@ -814,7 +814,7 @@ reply("Emoji error, please enter another emoji\nNOTE : Just enter 1 emoji")
             }
             let isWin = room.terjawab.length === room.terjawab.filter(v => v).length
             let caption = `
-Answer The Following Questions :\n${room.soal}\n\n\nThere Is ${room.jawaban.length} Answer ${room.jawaban.find(v => v.includes(' ')) ? `(Some Answers Have Spaces)` : ''}
+Responda as seguintes perguntas:\n${room.soal}\n\n\nExiste ${room.jawaban.length} Resposta ${room.jawaban.find(v => v.includes(' ')) ? `(Algumas respostas têm espaços)` : ''}
 ${isWin ? `All Answers Answered` : isSurender ? 'Surrender!' : ''}
 ${Array.from(room.jawaban, (jawaban, index) => {
         return isSurender || room.terjawab[index] ? `(${index + 1}) ${jawaban} ${room.terjawab[index] ? '@' + room.terjawab[index].split('@')[0] : ''}`.trim() : false
@@ -828,36 +828,36 @@ ${Array.from(room.jawaban, (jawaban, index) => {
             kuis = true
             jawaban = tebaklagu[m.sender.split('@')[0]]
             if (budy.toLowerCase() == jawaban) {
-                await XeonBotInc.sendButtonText(m.chat, [{ buttonId: 'guess song', buttonText: { displayText: 'Guess The Song' }, type: 1 }], `🎮 Guess The Music 🎮\n\nCorrect Answer 🎉\n\nWant To Play Again? Press The Button Below`, XeonBotInc.user.name, m)
+                await XeonBotInc.sendButtonText(m.chat, [{ buttonId: 'guess song', buttonText: { displayText: 'Descubra a Música' }, type: 1 }], `🎮 Descubra a Música 🎮\n\nResposta Correta 🎉\n\nDeseja jogar novamente? Pressione o botão abaixo`, XeonBotInc.user.name, m)
                 delete tebaklagu[m.sender.split('@')[0]]
-            } else reply('*Wrong Answer!*')
+            } else reply('*Resposta Errada!*')
         }
 
         if (kuismath.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
             kuis = true
             jawaban = kuismath[m.sender.split('@')[0]]
             if (budy.toLowerCase() == jawaban) {
-                await reply(`🎮 Math Quiz 🎮\n\nCorrect Answer 🎉\n\nWant To Play Again? Send ${prefix}math mode`)
+                await reply(`🎮 Math Quiz 🎮\n\nResposta Correta 🎉\n\nDeseja jogar novamente? Digite ${prefix}math mode`)
                 delete kuismath[m.sender.split('@')[0]]
-            } else reply('*Wrong Answer!*')
+            } else reply('*Resposta Errada!*')
         }
 
         if (tebakgambar.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
             kuis = true
             jawaban = tebakgambar[m.sender.split('@')[0]]
             if (budy.toLowerCase() == jawaban) {
-                await XeonBotInc.sendButtonText(m.chat, [{ buttonId: 'guess picture', buttonText: { displayText: 'Guess The Picture' }, type: 1 }], `🎮 Guess The Picture 🎮\n\nCorrect Answer 🎉\n\nWant To Play Again? Press The Button Below`, XeonBotInc.user.name, m)
+                await XeonBotInc.sendButtonText(m.chat, [{ buttonId: 'guess picture', buttonText: { displayText: 'Descubra a Imagem' }, type: 1 }], `🎮 Descubra a Imagem 🎮\n\nResposta Correta 🎉\n\nDeseja jogar novamente? Pressione o botão abaixo`, XeonBotInc.user.name, m)
                 delete tebakgambar[m.sender.split('@')[0]]
-            } else reply('*Wrong Answer!*')
+            } else reply('*Resposta Errada!*')
         }
 
         if (tebakkata.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
             kuis = true
             jawaban = tebakkata[m.sender.split('@')[0]]
             if (budy.toLowerCase() == jawaban) {
-                await XeonBotInc.sendButtonText(m.chat, [{ buttonId: 'guess word', buttonText: { displayText: 'Guess The Word' }, type: 1 }], `🎮 Guess The Word 🎮\n\nCorrect Answer 🎉\n\nWant To Play Again? Press The Button Below`, XeonBotInc.user.name, m)
+                await XeonBotInc.sendButtonText(m.chat, [{ buttonId: 'guess word', buttonText: { displayText: 'Descubra a Palavra' }, type: 1 }], `🎮 Descubra a Palavra 🎮\n\nResposta Correta 🎉\n\nDeseja jogar novamente? Pressione o botão abaixo`, XeonBotInc.user.name, m)
                 delete tebakkata[m.sender.split('@')[0]]
-            } else reply('*Wrong Answer!*')
+            } else reply('*Resposta Errada!*')
         }
 
         if (caklontong.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
@@ -865,37 +865,37 @@ ${Array.from(room.jawaban, (jawaban, index) => {
             jawaban = caklontong[m.sender.split('@')[0]]
 	    deskripsi = caklontong_desk[m.sender.split('@')[0]]
             if (budy.toLowerCase() == jawaban) {
-                await XeonBotInc.sendButtonText(m.chat, [{ buttonId: 'guess blank', buttonText: { displayText: 'Guess The Blank' }, type: 1 }], `🎮 Guess The Blank 🎮\n\nCorrect Answer 🎉\n*${deskripsi}*\n\nWant To Play Again? Press The Button Below`, XeonBotInc.user.name, m)
+                await XeonBotInc.sendButtonText(m.chat, [{ buttonId: 'guess blank', buttonText: { displayText: 'Descubra o Espaço em Branco' }, type: 1 }], `🎮 Descubra o Espaço em Branco 🎮\n\nResposta Correta 🎉\n*${deskripsi}*\n\nDeseja jogar novamente? Pressione o botão abaixo`, XeonBotInc.user.name, m)
                 delete caklontong[m.sender.split('@')[0]]
 		delete caklontong_desk[m.sender.split('@')[0]]
-            } else reply('*Wrong Answer!*')
+            } else reply('*Resposta Errada!*')
         }
 
         if (tebakkalimat.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
             kuis = true
             jawaban = tebakkalimat[m.sender.split('@')[0]]
             if (budy.toLowerCase() == jawaban) {
-                await XeonBotInc.sendButtonText(m.chat, [{ buttonId: 'guess sentence', buttonText: { displayText: 'Guess The Sentence' }, type: 1 }], `🎮 Guess The Sentence 🎮\n\nCorrect Answer 🎉\n\nWant To Play Again? Press The Button Below`, XeonBotInc.user.name, m)
+                await XeonBotInc.sendButtonText(m.chat, [{ buttonId: 'guess sentence', buttonText: { displayText: 'Descubra a Frase' }, type: 1 }], `🎮 Descubra a Frase 🎮\n\nResposta Correta 🎉\n\nDeseja jogar novamente? Pressione o botão abaixo`, XeonBotInc.user.name, m)
                 delete tebakkalimat[m.sender.split('@')[0]]
-            } else reply('*Wrong Answer!*')
+            } else reply('*Resposta Errada!*')
         }
 
         if (tebaklirik.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
             kuis = true
             jawaban = tebaklirik[m.sender.split('@')[0]]
             if (budy.toLowerCase() == jawaban) {
-                await XeonBotInc.sendButtonText(m.chat, [{ buttonId: 'guess lyrics', buttonText: { displayText: 'Guess The Lyrics' }, type: 1 }], `🎮 Guess The Lyrics 🎮\n\nCorrect Answer 🎉\n\nWant To Play Again? Press The Button Below`, XeonBotInc.user.name, m)
+                await XeonBotInc.sendButtonText(m.chat, [{ buttonId: 'guess lyrics', buttonText: { displayText: 'Descubra a Letra' }, type: 1 }], `🎮 Guess a Letra 🎮\n\nResposta Correta 🎉\n\nDeseja jogar novamente? Pressione o botão abaixo`, XeonBotInc.user.name, m)
                 delete tebaklirik[m.sender.split('@')[0]]
-            } else reply('*Wrong Answer!*')
+            } else reply('*Resposta Errada!*')
         }
 	    
 	if (tebaktebakan.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
             kuis = true
             jawaban = tebaktebakan[m.sender.split('@')[0]]
             if (budy.toLowerCase() == jawaban) {
-                await XeonBotInc.sendButtonText(m.chat, [{ buttonId: 'guess riddle', buttonText: { displayText: 'Guess The Riddle' }, type: 1 }], `🎮 Guess The Riddle 🎮\n\nCorrect Answer 🎉\n\nWant To Play Again? Press The Button Below`, XeonBotInc.user.name, m)
+                await XeonBotInc.sendButtonText(m.chat, [{ buttonId: 'guess riddle', buttonText: { displayText: 'Resolva o Enigma' }, type: 1 }], `🎮 Resolva o Enigma 🎮\n\nResposta Correta 🎉\n\nDeseja jogar novamente? Pressione o botão abaixo`, XeonBotInc.user.name, m)
                 delete tebaktebakan[m.sender.split('@')[0]]
-            } else reply('*Wrong Answer!*')
+            } else reply('*Resposta Errada!*')
         }
         
         //TicTacToe\\
@@ -914,10 +914,10 @@ ${Array.from(room.jawaban, (jawaban, index) => {
 	    }
 	    if (!isSurrender && 1 > (ok = room.game.turn(m.sender === room.game.playerO, parseInt(m.text) - 1))) {
 	    reply({
-	    '-3': 'Game Has Ended',
-	    '-2': 'Invalid',
-	    '-1': 'Invalid Position',
-	    0: 'Invalid Position',
+	    '-3': 'O jogo terminou',
+	    '-2': 'Inválido',
+	    '-1': 'Posição Inválida',
+	    0: 'Posição Inválida',
 	    }[ok])
 	    return !0
 	    }
@@ -949,11 +949,11 @@ ${arr.slice(0, 3).join('')}
 ${arr.slice(3, 6).join('')}
 ${arr.slice(6).join('')}
 
-${isWin ? `@${winner.split('@')[0]} Won!` : isTie ? `Game Over` : `Turn ${['❌', '⭕'][1 * room.game._currentTurn]} (@${room.game.currentTurn.split('@')[0]})`}
+${isWin ? `@${winner.split('@')[0]} Ganhou!` : isTie ? `Game Over` : `Vez de ${['❌', '⭕'][1 * room.game._currentTurn]} (@${room.game.currentTurn.split('@')[0]})`}
 ❌: @${room.game.playerX.split('@')[0]}
 ⭕: @${room.game.playerO.split('@')[0]}
 
-Typed *surrender* to surrender and admited defeat`
+Digitou *surrender* para se render e admitiu a derrota`
 	    if ((room.game._currentTurn ^ isSurrender ? room.x : room.o) !== m.chat)
 	    room[room.game._currentTurn ^ isSurrender ? 'x' : 'o'] = m.chat
 	    if (room.x !== room.o) await XeonBotInc.sendText(room.x, str, m, { mentions: parseMention(str) } )
@@ -971,7 +971,7 @@ Typed *surrender* to surrender and admited defeat`
 	    let tie = false
 	    if (m.sender == roof.p2 && /^(acc(ept)?|accept|yes|okay?|reject|no|later|nope(k.)?yes|y)/i.test(m.text) && m.isGroup && roof.status == 'wait') {
 	    if (/^(reject|no|later|n|nope(k.)?yes)/i.test(m.text)) {
-	    XeonBotInc.sendTextWithMentions(m.chat, `@${roof.p2.split`@`[0]} Refuse Suit, Suit Canceled`, m)
+	    XeonBotInc.sendTextWithMentions(m.chat, `@${roof.p2.split`@`[0]} Recusou Partida, Partida Cancelada`, m)
 	    delete this.suit[roof.id]
 	    return !0
 	    }
@@ -979,20 +979,20 @@ Typed *surrender* to surrender and admited defeat`
 	    roof.asal = m.chat
 	    clearTimeout(roof.waktu)
 	    //delete roof[roof.id].waktu
-	    XeonBotInc.sendText(m.chat, `Suit Has Been Sent To Chat
+	    XeonBotInc.sendText(m.chat, `A partida foi enviada no chat
 
 @${roof.p.split`@`[0]} dan 
 @${roof.p2.split`@`[0]}
 
-Please Choose A Suit In The Respective Chat"
-Click https://wa.me/${botNumber.split`@`[0]}`, m, { mentions: [roof.p, roof.p2] })
-	    if (!roof.pilih) XeonBotInc.sendText(roof.p, `Please Select \n\Rock🗿\nPaper📄\nScissors✂️`, m)
-	    if (!roof.pilih2) XeonBotInc.sendText(roof.p2, `Please Select \n\nRock🗿\nPaper📄\nScissors✂️`, m)
+Por favor, escolha a partida no respectivo chat"
+Clique https://wa.me/${botNumber.split`@`[0]}`, m, { mentions: [roof.p, roof.p2] })
+	    if (!roof.pilih) XeonBotInc.sendText(roof.p, `Selecione \n\Rock🗿\nPaper📄\nScissors✂️`, m)
+	    if (!roof.pilih2) XeonBotInc.sendText(roof.p2, `Selecione \n\nRock🗿\nPaper📄\nScissors✂️`, m)
 	    roof.waktu_milih = setTimeout(() => {
-	    if (!roof.pilih && !roof.pilih2) XeonBotInc.sendText(m.chat, `Both Players Don't Want To Play,\nSuit Canceled`)
+	    if (!roof.pilih && !roof.pilih2) XeonBotInc.sendText(m.chat, `Ambos os jogadores não querem jogar,\Jogo cancelado`)
 	    else if (!roof.pilih || !roof.pilih2) {
 	    win = !roof.pilih ? roof.p2 : roof.p
-	    XeonBotInc.sendTextWithMentions(m.chat, `@${(roof.pilih ? roof.p2 : roof.p).split`@`[0]} Didn't Choose Suit, Game Over!`, m)
+	    XeonBotInc.sendTextWithMentions(m.chat, `@${(roof.pilih ? roof.p2 : roof.p).split`@`[0]} Não Escolhi, Fim de Jogo!`, m)
 	    }
 	    delete this.suit[roof.id]
 	    return !0
@@ -1007,14 +1007,14 @@ Click https://wa.me/${botNumber.split`@`[0]}`, m, { mentions: [roof.p, roof.p2] 
 	    if (jwb && reg.test(m.text) && !roof.pilih && !m.isGroup) {
 	    roof.pilih = reg.exec(m.text.toLowerCase())[0]
 	    roof.text = m.text
-	    reply(`You Have Chosen ${m.text} ${!roof.pilih2 ? `\n\nWaiting For The Opponent To Choose` : ''}`)
-	    if (!roof.pilih2) XeonBotInc.sendText(roof.p2, '_The Opponent Has Chosen_\nNow It Is Your Turn', 0)
+	    reply(`Você escolheu ${m.text} ${!roof.pilih2 ? `\n\nEsperando o oponente escolher` : ''}`)
+	    if (!roof.pilih2) XeonBotInc.sendText(roof.p2, '_O oponente escolheu_\nAgora é a sua vez', 0)
 	    }
 	    if (jwb2 && reg.test(m.text) && !roof.pilih2 && !m.isGroup) {
 	    roof.pilih2 = reg.exec(m.text.toLowerCase())[0]
 	    roof.text2 = m.text
-	    reply(`You Have Chosen ${m.text} ${!roof.pilih ? `\n\nWaiting For The Opponent To Choose` : ''}`)
-	    if (!roof.pilih) XeonBotInc.sendText(roof.p, '_The Opponent Has Chosen_\nNow It Is Your Turn', 0)
+	    reply(`Você escolheu ${m.text} ${!roof.pilih ? `\n\nEsperando o oponente escolher` : ''}`)
+	    if (!roof.pilih) XeonBotInc.sendText(roof.p, '_O oponente escolheu_\nAgora é a sua vez', 0)
 	    }
 	    let stage = roof.pilih
 	    let stage2 = roof.pilih2
@@ -1027,10 +1027,10 @@ Click https://wa.me/${botNumber.split`@`[0]}`, m, { mentions: [roof.p, roof.p2] 
 	    else if (k.test(stage) && b.test(stage2)) win = roof.p
 	    else if (k.test(stage) && g.test(stage2)) win = roof.p2
 	    else if (stage == stage2) tie = true
-	    XeonBotInc.sendText(roof.asal, `_*Suit Results*_${tie ? '\nSERIES' : ''}
+	    XeonBotInc.sendText(roof.asal, `_*Resultado*_${tie ? '\EMPATE' : ''}
 
-@${roof.p.split`@`[0]} (${roof.text}) ${tie ? '' : roof.p == win ? ` Win \n` : ` Lost \n`}
-@${roof.p2.split`@`[0]} (${roof.text2}) ${tie ? '' : roof.p2 == win ? ` Win \n` : ` Lost \n`}
+@${roof.p.split`@`[0]} (${roof.text}) ${tie ? '' : roof.p == win ? ` VITÓRIA \n` : ` DERROTA \n`}
+@${roof.p2.split`@`[0]} (${roof.text2}) ${tie ? '' : roof.p2 == win ? ` VITÓRIA \n` : ` DERROTA \n`}
 `.trim(), m, { mentions: [roof.p, roof.p2] })
 	    delete this.suit[roof.id]
 	    }
@@ -1044,8 +1044,8 @@ Click https://wa.me/${botNumber.split`@`[0]}`, m, { mentions: [roof.p, roof.p2] 
             if (!afkTime || afkTime < 0) continue
             let reason = user.afkReason || ''
             reply(`
-Don't tag him!
-He's in AFK/Offline ${reason ? 'dengan alasan ' + reason : 'no reason'}
+Não o marque!
+Ele está AFK/Offline ${reason ? 'dengan alasan ' + reason : 'no reason'}
 It's been ${clockString(new Date - afkTime)}
 `.trim())
         }
@@ -1053,7 +1053,7 @@ It's been ${clockString(new Date - afkTime)}
         if (db.data.users[m.sender].afkTime > -1) {
             let user = global.db.data.users[m.sender]
             reply(`
-You Came Back Online From AFK${user.afkReason ? ' after ' + user.afkReason : ''}
+Você voltou de${user.afkReason ? ' after ' + user.afkReason : ''}
 In ${clockString(new Date - user.afkTime)}
 `.trim())
             user.afkTime = -1
@@ -1131,9 +1131,9 @@ switch(command) {
  if (isBan) return reply(mess.ban)	 			
 if (!isCreator) return replay(mess.owner)
 if (args[0] === "on") {
-if (isBanChat) return replay('Already Banned')
+if (isBanChat) return replay('Já banido')
 banchat.push(from)
-replay('Success in banning the gc')
+replay('Sucesso em banir do gp')
 var groupe = await XeonBotInc.groupMetadata(from)
 var members = groupe['participants']
 var mems = []
@@ -1142,16 +1142,16 @@ mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
 })
 XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️Aviso⚠️ 」\`\`\`\n\nO bot foi desabilitado neste grupo, agora ninguém poderá usar o bot!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
 } else if (args[0] === "off") {
-if (!isBanChat) return replay('Already Unbanned')
+if (!isBanChat) return replay('Já desbanido')
 let off = banchat.indexOf(from)
 banchat.splice(off, 1)
-replay('Success in unbanning the gc')
+replay('ucesso em desbanir do gp')
 } else {
   let buttonsntnsfw = [
   { buttonId: `${command} on`, buttonText: { displayText: 'Ban' }, type: 1 },
   { buttonId: `${command} off`, buttonText: { displayText: 'Unban' }, type: 1 }
   ]
-  await XeonBotInc.sendButtonText(m.chat, buttonsntnsfw, `Por favor, clique no botão abaixo\n\nBann\nUnban`, `${global.botname}`, m)
+  await XeonBotInc.sendButtonText(m.chat, buttonsntnsfw, `Por favor, clique no botão abaixo\n\nBan\nUnban`, `${global.botname}`, m)
   }
   }
   break
@@ -1160,7 +1160,7 @@ case 'ban': {
 	   if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (!isCreator) return replay(mess.owner)
-if (!args[0]) return replay(`Select add or del(add to ban, del to unban), For Example: Reply *${prefix}ban add* to the user u want to ban`)
+if (!args[0]) return replay(`Selecione add ou del(add para ban, del para unban), Exemplo: responda *${prefix}ban add* para o usuário que você quer banir`)
 if (args[1]) {
 orgnye = args[1] + "@s.whatsapp.net"
 } else if (m.quoted) {
@@ -1168,14 +1168,14 @@ orgnye = m.quoted.sender
 }
 const isBane = banUser.includes(orgnye)
 if (args[0] === "add") {
-if (isBane) return ads('User was already banned')
+if (isBane) return ads('O usuário já foi banido')
 banUser.push(orgnye)
-replay(`Successfully banned the user`)
+replay(`O usuário foi banido com sucesso`)
 } else if (args[0] === "del") {
-if (!isBane) return ads('User was already unbanned')
+if (!isBane) return ads('O usuário já foi desbanido')
 let delbans = banUser.indexOf(orgnye)
 banUser.splice(delbans, 1)
-replay(`Successfully unbanned the user`)
+replay(`O usuário foi desbanido com sucesso`)
 } else {
 replay("Error")
 }
@@ -1536,7 +1536,7 @@ if (isBanChat) return reply(mess.banChat)
                 let user = global.db.data.users[m.sender]
                 user.afkTime = + new Date
                 user.afkReason = text
-                reply(`${m.pushName} Has Gone Afk/Offline${text ? ': ' + text : ''}`)
+                reply(`${m.pushName} Ficou Afk/Offline${text ? ': ' + text : ''}`)
             }
             break	
         case 'ttc': case 'ttt': case 'tictactoe': {
@@ -1544,10 +1544,10 @@ if (isBanChat) return reply(mess.banChat)
 if (isBanChat) return reply(mess.banChat)
             let TicTacToe = require("./lib/tictactoe")
             this.game = this.game ? this.game : {}
-            if (Object.values(this.game).find(room => room.id.startsWith('tictactoe') && [room.game.playerX, room.game.playerO].includes(m.sender))) return replay(`You Are Still In The Game`)
+            if (Object.values(this.game).find(room => room.id.startsWith('tictactoe') && [room.game.playerX, room.game.playerO].includes(m.sender))) return replay(`Você ainda está no jogo`)
             let room = Object.values(this.game).find(room => room.state === 'WAITING' && (text ? room.name === text : true))
             if (room) {
-            reply('Partner found!')
+            reply('Parceiro encontrado!')
             room.o = m.chat
             room.game.playerO = m.sender
             room.state = 'PLAYING'
@@ -1574,7 +1574,7 @@ ${arr.slice(6).join('')}
 
 Waiting @${room.game.currentTurn.split('@')[0]}
 
-Type *surrender* to surrender and admit defeat`
+Digite *surrender* para se render e admitir a derrota`
             if (room.x !== room.o) await XeonBotInc.sendText(room.x, str, m, { mentions: parseMention(str) } )
             await XeonBotInc.sendText(room.o, str, m, { mentions: parseMention(str) } )
             } else {
