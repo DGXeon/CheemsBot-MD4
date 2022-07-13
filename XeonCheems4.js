@@ -1094,25 +1094,20 @@ const reactionMessage = {
                 const timestampe = speed();
 const latensie = speed() - timestampe
                 const menulist = `┌─❖
-│「 Hi 👋 」
+│「 Olá 👋 」
 └┬❖ 「 ${pushname} 」
-┌┤✑  How Are You? 😄
+┌┤✑  Como está seu dia? 😄
 │└────────────┈ ⳹
 │
 └─「 𝘽𝙊𝙏 𝙄𝙉𝙁𝙊 」       
-│𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
-│𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
-│𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botname}
-│𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 : ${global.ownername}
-│𝗢𝘄𝗻𝗲𝗿 𝗡𝗼. : ${global.owner}
-│𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
-│𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
-│𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
-│𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 : ${jumlahcmd}
-│𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 𝗧𝗼𝗱𝗮𝘆 : ${jumlahharian}
+│𝗩𝗲𝗹𝗼𝗰𝗶𝗱𝗮𝗱𝗲 : ${latensie.toFixed(4)} miliseconds
+│𝗧𝗲𝗺𝗽𝗼 𝗱𝗲 𝗘𝘅𝗲𝗰𝘂𝗰̧𝗮̃𝗼 : ${runtime(process.uptime())}
+│𝗡𝗼𝗺𝗲 𝗱𝗼 𝗕𝗼𝘁 : ${global.botname}
+│𝗡𝗼𝗺𝗲 𝗱𝗼 𝗗𝗼𝗻𝗼 : ${global.ownername}
+│𝗡° 𝗱𝗼 𝗗𝗼𝗻𝗼 : ${global.owner}
 └┬────────────┈ ⳹
-   │✑  Please Select
-   │✑  The Button Below
+   │✑  Escolha
+   │✑  Uma Opção Abaixo
    └─────────────┈ ⳹`
    
    //randoming function
@@ -1168,7 +1163,7 @@ var mems = []
 members.map(async adm => {
 mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
 })
-XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️Warning⚠️ 」\`\`\`\n\nThe bot has been disabled in this group, now no one will able to use the bot in this group!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️Aviso⚠️ 」\`\`\`\n\nO bot foi desabilitado neste grupo, agora ninguém poderá usar o bot!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
 } else if (args[0] === "off") {
 if (!isBanChat) return replay('Already Unbanned')
 let off = banchat.indexOf(from)
@@ -1179,7 +1174,7 @@ replay('Success in unbanning the gc')
   { buttonId: `${command} on`, buttonText: { displayText: 'Ban' }, type: 1 },
   { buttonId: `${command} off`, buttonText: { displayText: 'Unban' }, type: 1 }
   ]
-  await XeonBotInc.sendButtonText(m.chat, buttonsntnsfw, `Please click the button below\n\nBan to Ban\nUnban to unban`, `${global.botname}`, m)
+  await XeonBotInc.sendButtonText(m.chat, buttonsntnsfw, `Por favor, clique no botão abaixo\n\nBann\nUnban`, `${global.botname}`, m)
   }
   }
   break
