@@ -1103,8 +1103,8 @@ const latensie = speed() - timestampe
 │𝗩𝗲𝗹𝗼𝗰𝗶𝗱𝗮𝗱𝗲 : ${latensie.toFixed(4)} miliseconds
 │𝗧𝗲𝗺𝗽𝗼 𝗱𝗲 𝗘𝘅𝗲𝗰𝘂𝗰̧𝗮̃𝗼 : ${runtime(process.uptime())}
 │𝗡𝗼𝗺𝗲 𝗱𝗼 𝗕𝗼𝘁 : ${global.botname}
-│𝗡𝗼𝗺𝗲 𝗱𝗼 𝗗𝗼𝗻𝗼 : ${global.ownername}
-│𝗡° 𝗱𝗼 𝗗𝗼𝗻𝗼 : ${global.owner}
+│𝗖𝗿𝗶𝗮𝗱𝗼𝗿 : ${global.ownername}
+│𝗡° 𝗱𝗼 𝗖𝗿𝗶𝗮𝗱𝗼𝗿 : ${global.owner}
 └┬────────────┈ ⳹
    │✑  Escolha
    │✑  Uma Opção Abaixo
@@ -3219,27 +3219,27 @@ for (let i of anu) {
 await sleep(1500)
 let btn = [{
 urlButton: {
-displayText: 'YouTube 🍓',
+displayText: 'YouTube 📽️',
 url: `${global.websitex}`
 }
 }, {
 urlButton: {
-displayText: 'Script 🍜',
+displayText: 'Script 📝',
 url: `${global.botscript}`
 }
 }, {
 quickReplyButton: {
-displayText: 'Bot Status 🚀',
+displayText: 'Bot Status 🤖',
 id: 'ping'
 }
 }, {
 quickReplyButton: {
-displayText: 'Menu 🐰',
+displayText: 'Menu 📝',
 id: 'menu'
 }  
 }, {
 quickReplyButton: {
-displayText: 'Owner 😈',
+displayText: 'Criador 👨‍💻',
 id: 'owner'
 }
 }]
@@ -3260,27 +3260,27 @@ for (let yoi of anu) {
 await sleep(1500)
 let btn = [{
 urlButton: {
-displayText: 'YouTube 🍓',
+displayText: 'YouTube 📽️',
 url: `${global.websitex}`
 }
 }, {
 urlButton: {
-displayText: 'Script 🍜',
+displayText: 'Script 📝',
 url: `${global.botscript}`
 }
 }, {
 quickReplyButton: {
-displayText: 'Bot Status 🚀',
+displayText: 'Bot Status 🤖',
 id: 'ping'
 }
 }, {
 quickReplyButton: {
-displayText: 'Menu 🐰',
+displayText: 'Menu 📝',
 id: 'menu'
 }  
 }, {
 quickReplyButton: {
-displayText: 'Owner 😈',
+displayText: 'Criador 👨‍💻',
 id: 'owner'
 }
 }]
@@ -3302,27 +3302,27 @@ if (!isCreator) return replay(mess.owner)
                     await sleep(1500)
                     let butoon = [{
                                 urlButton: {
-                                displayText: 'YouTube 🍓',
+                                displayText: 'YouTube 📽️',
 url: `${global.websitex}`
                                 }
                             }, {
 urlButton: {
-displayText: 'Script 🍜',
+displayText: 'Script 📝',
 url: `${global.botscript}`
 }
 }, {
 quickReplyButton: {
-displayText: 'Bot Status 🚀',
+displayText: 'Bot Status 🤖',
 id: 'ping'
 }
 }, {
 quickReplyButton: {
-displayText: 'Menu 🐰',
+displayText: 'Menu 📝',
 id: 'menu'
 }  
 }, {
 quickReplyButton: {
-displayText: 'Owner 😈',
+displayText: 'Criador 👨‍💻',
 id: 'owner'
 }
 }]
@@ -8774,27 +8774,27 @@ if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }})
 	                let btn = [{
                                 urlButton: {
-                                    displayText: 'YouTube 🍒',
+                                    displayText: 'YouTube 📽️',
                                     url: `${websitex}`
                                 }
                             }, {
                                 callButton: {
-                                    displayText: 'Script 🍜',
+                                    displayText: 'Script 🕸️',
                                     url: `${botscript}`
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'All Menu 🍱',
+                                    displayText: 'Menu Principal 🗒️',
                                     id: 'allmenu'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'List Menu 🍢',
+                                    displayText: 'Listar Menus 📝',
                                     id: 'command'
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Owner 🤣',
+                                    displayText: 'Criador 👨‍💻',
                                     id: 'owner'
                                 }
                             }]
@@ -8811,11 +8811,11 @@ XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key 
                         /////////XeonBotInc.send5ButMsg(m.chat, menulist, global.botname, btn)
                         } else if (setbot.templateDocument) {
                         let buttonmenu = [
-        	{ urlButton: { displayText: `YouTube 🍒`, url : `${websitex}` } },
-            { urlButton: { displayText: `Script 🍜`, url: `${botscript}` } },
-            { quickReplyButton: { displayText: `All Menu 🍱`, id: 'allmenu'} },
-            { quickReplyButton: { displayText: `List Menu 🍢`, id: 'command'} },
-            { quickReplyButton: { displayText: `Owner 🤣`, id: 'owner'} }
+        	{ urlButton: { displayText: `YouTube 📽️`, url : `${websitex}` } },
+            { urlButton: { displayText: `Script 🕸️`, url: `${botscript}` } },
+            { quickReplyButton: { displayText: `Menu Principal 📝`, id: 'allmenu'} },
+            { quickReplyButton: { displayText: `Listar Menus 🗒️`, id: 'command'} },
+            { quickReplyButton: { displayText: `Criador 👨‍💻`, id: 'owner'} }
         	]
         	XeonBotInc.sendMessage(m.chat, { caption: menulist, document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'), mimetype: `${docs}`, fileName: `${ownername}`, templateButtons: buttonmenu, footer: `${botname}`, mentionedJid: [m.sender] })
                         }
