@@ -54,23 +54,23 @@ global.doc5 = 'application/pdf'
 global.doc6 = 'application/vnd.android.package-archive'
 
 //owmner v card
-global.vcardowner = ['553288750638'] //ur owner number
-global.ownername = "🔒Iury X." //ur owner name
-global.ytname = "YT: [...]" //ur yt chanel name
+global.vcardowner = ['553288416873'] //ur owner number
+global.ownername = "Iury X." //ur owner name
+global.ytname = "YT: N/A" //ur yt chanel name
 global.socialm = "GitHub: Iury-Xavier" //ur github or insta name
 global.location = "Minas Gerais, Brasil" //ur location
 
 //bot bomdy 
-global.owner = ['553288750638']
-global.ownertag = '553288750638' //ur tag number
-global.botname = 'Água Bot' //ur bot name
+global.owner = ['553288416873']
+global.ownertag = '553288416873' //ur tag number
+global.botname = '𝒜𝑔𝓊𝒶 𝐵𝒪𝒯' //ur bot name
 global.linkz = "[...]" //your theme url which will be displayed on whatsapp
 global.websitex = "[...]" //ur website to be displayed
-global.botscript = 'https://github.com/Iury-Xavier/CheemsBot-MD4' //script link
+global.botscript = 'https://github.com/Iury-Xavier/BotWpp' //script link
 global.reactmoji = "💧" //ur menu react emoji
 global.themeemoji = "💧" //ur theme emoji
-global.packname = "Água [Stickers]" //ur sticker watermark packname
-global.author = "🔒Iury X." //ur sticker watermark author
+global.packname = "𝒜𝑔𝓊𝒶 [𝒮𝓉𝒾𝒸𝓀𝑒𝓇𝓈]" //ur sticker watermark packname
+global.author = "Iury X." //ur sticker watermark author
 
 //Bot theme media
 global.thum = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur thumb pic
@@ -79,7 +79,7 @@ global.err4r = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur error pic
 global.thumb = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur thumb pic
 
 //damtabase
-global.premium = ['553288750638'] //ur premium numbers
+global.premium = ['553288416873'] //ur premium numbers
 global.ntilinkytvid = []
 global.ntilinkytch = []
 global.ntilinkig = []
@@ -102,7 +102,7 @@ global.ntilink = []
 //omther
 global.sessionName = 'session'
 global.antitags = true
-global.prefa = ['#','!','.','💧']
+global.prefa = ['#']
 global.sp = '⭔'
 global.mess = {
     success: 'Feito ✓',
