@@ -2004,14 +2004,14 @@ XeonBotInc.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${s
       case 'playboy':
       case 'fuckgirl':
       case 'playgirl':
-      case 'hot': {
+      case 'gostoso': {
       	            	if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
             if (!m.isGroup) return replay(`${mess.group}`)
             let member = participants.map(u => u.id)
             let me = m.sender
             let jodoh = member[Math.floor(Math.random() * member.length)]
-            let jawab = `The Most *${command}* Here Is @${jodoh.split('@')[0]}`
+            let jawab = `O mais *${command}* aqui é @${jodoh.split('@')[0]}`
             let ments = [me, jodoh]
             let buttons = [
                         { buttonId: '👀', buttonText: { displayText: '👀😂' }, type: 1 }
