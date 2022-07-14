@@ -138,7 +138,7 @@ function pickRandom(list) {
 return list[Math.floor(list.length * Math.random())]
 }
 //document randomizer
-let documents = [doc1,doc2,doc3,doc4,doc5,doc6]
+/* let documents = [doc1,doc2,doc3,doc4,doc5,doc6]
 let docs = pickRandom(documents)
 
     XeonBotInc.ev.on('group-participants.update', async (anu) => {
@@ -232,7 +232,7 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
    //you fail to put, i sue you for sure!
 let buttons = [
 {buttonId: `wkwkwk`, buttonText: {displayText: 'Sayonara 🥀'}, type: 1}
-]
+]*/
 let buttonMessage = {
 document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
 mimetype: docs,
