@@ -1931,6 +1931,7 @@ XeonBotInc.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${s
       case 'drogado':
       case 'sexy':
       case 'viciado':
+      case 'gay':
       case 'fdp':
       case 'desajeitado':
       case 'idiota':
