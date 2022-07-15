@@ -1,4 +1,4 @@
-//LINHA 1500
+//LINHA 2628
 require('./settings')
 const { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = require('@adiwajshing/baileys')
 const fs = require('fs')
@@ -559,15 +559,15 @@ XeonBotInc.sendReadReceipt(from, m.sender, [m.key.id])}
 if (AntiLink) {
 linkgce = await XeonBotInc.groupInviteCode(from)
 if (budy.includes(`https://chat.whatsapp.com/${linkgce}`)) {
-reply(`\`\`\`「 Link do grupo detectado 」\`\`\`\n\nVocê não será kickado pelo bot porque o que você envia é um link para este grupo`)
+reply(`\`\`\`「 𝗟𝗶𝗻𝗸 𝗱𝗲 𝗴𝗿𝘂𝗽𝗼 𝗱𝗲𝘁𝗲𝗰𝘁𝗮𝗱𝗼 」\`\`\`\n\n𝗩𝗼𝗰𝗲̂ 𝗻𝗮̃𝗼 𝘀𝗲𝗿𝗮́ 𝗸𝗶𝗰𝗸𝗮𝗱𝗼 𝗽𝗲𝗹𝗼 𝗯𝗼𝘁 𝗽𝗼𝗿𝗾𝘂𝗲 𝗼 𝗾𝘂𝗲 𝘃𝗼𝗰𝗲̂ 𝗲𝗻𝘃𝗶𝗼𝘂 𝗲́ 𝘂𝗺 𝗹𝗶𝗻𝗸 𝗽𝗮𝗿𝗮 𝗲𝘀𝘁𝗲 𝗴𝗿𝘂𝗽𝗼`)
 } else if (isUrl(m.text)) {
-bvl = `\`\`\`「 Link do grupo detectado 」\`\`\`\n\nAdmin enviou um link, o administrador é livre para postar qualquer link`
+bvl = `\`\`\`「 𝗟𝗶𝗻𝗸 𝗱𝗲 𝗴𝗿𝘂𝗽𝗼 𝗱𝗲𝘁𝗲𝗰𝘁𝗮𝗱𝗼 」\`\`\`\n\n𝗔𝗱𝗺𝗶𝗻 𝗲𝗻𝘃𝗶𝗼𝘂 𝘂𝗺 𝗹𝗶𝗻𝗸, 𝗼 𝗮𝗱𝗺𝗶𝗻𝗶𝘀𝘁𝗿𝗮𝗱𝗼𝗿 𝗲́ 𝗹𝗶𝘃𝗿𝗲 𝗽𝗮𝗿𝗮 𝗽𝗼𝘀𝘁𝗮𝗿 𝗾𝘂𝗮𝗹𝗾𝘂𝗲𝗿 𝗹𝗶𝗻𝗸`
 if (isAdmins) return reply(bvl)
 if (m.key.fromMe) return reply(bvl)
 if (isCreator) return reply(bvl)
 kice = m.sender
 await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
-XeonBotInc.sendMessage(from, {text:`\`\`\`「Link do grupo detectado 」\`\`\`\n\n@${kice.split("@")[0]} Foi kickado por enviar link neste grupo`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+XeonBotInc.sendMessage(from, {text:`\`\`\`「 𝗟𝗶𝗻𝗸 𝗱𝗲 𝗴𝗿𝘂𝗽𝗼 𝗱𝗲𝘁𝗲𝗰𝘁𝗮𝗱𝗼 」\`\`\`\n\n@${kice.split("@")[0]} F𝗼𝗶 𝗸𝗶𝗰𝗸𝗮𝗱𝗼 𝗽𝗼𝗿 𝗲𝗻𝘃𝗶𝗮𝗿 𝗹𝗶𝗻𝗸 𝗻𝗲𝘀𝘁𝗲 𝗴𝗿𝘂𝗽𝗼`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 } else {
 }
 }
@@ -575,32 +575,32 @@ XeonBotInc.sendMessage(from, {text:`\`\`\`「Link do grupo detectado 」\`\`\`\n
   if (antiWame)
   if (budy.includes(`wa.me`)) {
 if (!isBotAdmins) return
-bvl = `\`\`\`「 Link Wa.me Detectado 」\`\`\`\n\nO administrador enviou um link wa.me, o administrador é livre para enviar qualquer link😇`
+bvl = `\`\`\`「 𝗟𝗶𝗻𝗸 𝗱𝗼 𝗪𝗮.𝗺𝗲 𝗗𝗲𝘁𝗲𝗰𝘁𝗮𝗱𝗼 」\`\`\`\n\n𝗢 𝗮𝗱𝗺𝗶𝗻𝗶𝘀𝘁𝗿𝗮𝗱𝗼𝗿 𝗲𝗻𝘃𝗶𝗼𝘂 𝘂𝗺 𝗹𝗶𝗻𝗸 𝘄𝗮.𝗺𝗲, 𝗼 𝗮𝗱𝗺𝗶𝗻𝗶𝘀𝘁𝗿𝗮𝗱𝗼𝗿 𝗲́ 𝗹𝗶𝘃𝗿𝗲 𝗽𝗮𝗿𝗮 𝗲𝗻𝘃𝗶𝗮𝗿 𝗾𝘂𝗮𝗹𝗾𝘂𝗲𝗿 𝗹𝗶𝗻𝗸😇`
 if (isAdmins) return reply(bvl)
 if (m.key.fromMe) return reply(bvl)
 if (isCreator) return reply(bvl)
 kice = m.sender
 await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
-XeonBotInc.sendMessage(from, {text:`\`\`\`「 Wa.me Link Detectado 」\`\`\`\n\n@${kice.split("@")[0]} Foi expulso por enviar link de vídeo do youtube neste grupo`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+XeonBotInc.sendMessage(from, {text:`\`\`\`「 𝗟𝗶𝗻𝗸 𝗪𝗮.𝗺𝗲 𝗗𝗲𝘁𝗲𝗰𝘁𝗮𝗱𝗼 」\`\`\`\n\n@${kice.split("@")[0]} 𝗙𝗼𝗶 𝗲𝘅𝗽𝘂𝗹𝘀𝗼 𝗽𝗼𝗿 𝗲𝗻𝘃𝗶𝗮𝗿 𝗹𝗶𝗻𝗸 𝗱𝗼 𝗪𝗮.𝗺𝗲 𝗻𝗲𝘀𝘁𝗲 𝗴𝗿𝘂𝗽𝗼`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 } else {
 }
   if (antiWame)
   if (budy.includes(`http://wa.me`)) {
 if (!isBotAdmins) return
-bvl = `\`\`\`「 Link Wa.me Detectado 」\`\`\`\n\nO administrador enviou um link wa.me, o administrador é livre para enviar qualquer link😇`
+bvl = `\`\`\`「 𝗟𝗶𝗻𝗸 𝗱𝗼 𝗪𝗮.𝗺𝗲 𝗗𝗲𝘁𝗲𝗰𝘁𝗮𝗱𝗼 」\`\`\`\n\n𝗢 𝗮𝗱𝗺𝗶𝗻𝗶𝘀𝘁𝗿𝗮𝗱𝗼𝗿 𝗲𝗻𝘃𝗶𝗼𝘂 𝘂𝗺 𝗹𝗶𝗻𝗸 𝘄𝗮.𝗺𝗲, 𝗼 𝗮𝗱𝗺𝗶𝗻𝗶𝘀𝘁𝗿𝗮𝗱𝗼𝗿 𝗲́ 𝗹𝗶𝘃𝗿𝗲 𝗽𝗮𝗿𝗮 𝗲𝗻𝘃𝗶𝗮𝗿 𝗾𝘂𝗮𝗹𝗾𝘂𝗲𝗿 𝗹𝗶𝗻𝗸😇`
 if (isAdmins) return reply(bvl)
 if (m.key.fromMe) return reply(bvl)
 if (isCreator) return reply(bvl)
 kice = m.sender
 await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
-XeonBotInc.sendMessage(from, {text:`\`\`\`「 Wa.me Link Detected 」\`\`\`\n\n@${kice.split("@")[0]} Foi expulso por enviar link de vídeo do youtube neste grupo`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+XeonBotInc.sendMessage(from, {text:`\`\`\`「 𝗟𝗶𝗻𝗸 𝗪𝗮.𝗺𝗲 𝗗𝗲𝘁𝗲𝗰𝘁𝗮𝗱𝗼 」\`\`\`\n\n@${kice.split("@")[0]} 𝗙𝗼𝗶 𝗲𝘅𝗽𝘂𝗹𝘀𝗼 𝗽𝗼𝗿 𝗲𝗻𝘃𝗶𝗮𝗿 𝗹𝗶𝗻𝗸 𝗱𝗼 𝗪𝗮.𝗺𝗲 𝗻𝗲𝘀𝘁𝗲 𝗴𝗿𝘂𝗽𝗼`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 } else {
 }
 //antivirtex by xeon
   if (antiVirtex) {
   if (budy.length > 3500) {
-  reply(`Alguém fez spam de vírus!! Marcar como lido⚠️\n`.repeat(300))
-  reply(`\`\`\`「 Vírus detectado 」\`\`\`\n\nDesculpe, você será expulso!`)
+  reply(`𝗔𝗹𝗴𝘂𝗲́𝗺 𝗳𝗲𝘇 𝘀𝗽𝗮𝗺 𝗱𝗲 𝘃𝗶́𝗿𝘂𝘀!! 𝗠𝗮𝗿𝗰𝗮𝗿 𝗰𝗼𝗺𝗼 𝗹𝗶𝗱𝗼⚠️\n`.repeat(300))
+  reply(`\`\`\`「 𝗩𝗶́𝗿𝘂𝘀 𝗱𝗲𝘁𝗲𝗰𝘁𝗮𝗱𝗼 」\`\`\`\n\n𝗗𝗲𝘀𝗰𝘂𝗹𝗽𝗲, 𝘃𝗼𝗰𝗲̂ 𝘀𝗲𝗿𝗮́ 𝗲𝘅𝗽𝘂𝗹𝘀𝗼!`)
   if (!isBotAdmins) return reply(mess.botAdmin)
   XeonBotInc.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
   }
@@ -608,68 +608,68 @@ XeonBotInc.sendMessage(from, {text:`\`\`\`「 Wa.me Link Detected 」\`\`\`\n\n@
 //anti bad words by xeon
 if (antiToxic)
 if (bad.includes(messagesD)) {
-tos = ['Ei, cuidado com a boca','Nunca foi ensinado a falar?','Para de ser toxico porra','Não seja tóxico']
+tos = ['𝗘𝗶, 𝗰𝘂𝗶𝗱𝗮𝗱𝗼 𝗰𝗼𝗺 𝗮 𝗯𝗼𝗰𝗮','𝗡𝘂𝗻𝗰𝗮 𝗳𝗼𝗶 𝗲𝗻𝘀𝗶𝗻𝗮𝗱𝗼 𝗮 𝗳𝗮𝗹𝗮𝗿?','𝗣𝗮𝗿𝗮 𝗱𝗲 𝘀𝗲𝗿 𝘁𝗼𝘅𝗶𝗰𝗼 𝗽𝗼𝗿𝗿𝗮','𝗡𝗮̃𝗼 𝘀𝗲𝗷𝗮 𝘁𝗼́𝘅𝗶𝗰𝗼']
 sin =  tos[Math.floor(Math.random() * (tos.length))]
 reply(sin)
 if (m.text) {
-bvl = `\`\`\`「 Bad Word Detected 」\`\`\`\in\Você está usando uma palavra proibida, mas você é um administrador, é por isso que eu não vou te kickar😇`
+bvl = `\`\`\`「 𝗕𝗮𝗱 𝗪𝗼𝗿𝗱 𝗗𝗲𝘁𝗲𝗰𝘁𝗮𝗱𝗼 」\`\`\`\in\𝗩𝗼𝗰𝗲̂ 𝗲𝘀𝘁𝗮́ 𝘂𝘀𝗮𝗻𝗱𝗼 𝘂𝗺𝗮 𝗽𝗮𝗹𝗮𝘃𝗿𝗮 𝗽𝗿𝗼𝗶𝗯𝗶𝗱𝗮, 𝗺𝗮𝘀 𝘃𝗼𝗰𝗲̂ 𝗲́ 𝘂𝗺 𝗮𝗱𝗺𝗶𝗻𝗶𝘀𝘁𝗿𝗮𝗱𝗼𝗿, 𝗲́ 𝗽𝗼𝗿 𝗶𝘀𝘀𝗼 𝗾𝘂𝗲 𝗲𝘂 𝗻𝗮̃𝗼 𝘃𝗼𝘂 𝘁𝗲 𝗸𝗶𝗰𝗸𝗮𝗿`
 if (isAdmins) return reply(bvl)
 if (m.key.fromMe) return reply(bvl)
 if (isCreator) return reply(bvl)
 kice = m.sender
 await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
-XeonBotInc.sendMessage(from, {text:`\`\`\`「 Bad Word Detected 」\`\`\`\n\n@${kice.split("@")[0]} foi expulso por usar palavras proibidas neste grupo`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})}
+XeonBotInc.sendMessage(from, {text:`\`\`\`「 𝗕𝗮𝗱 𝗪𝗼𝗿𝗱 𝗗𝗲𝘁𝗲𝗰𝘁𝗮𝗱𝗼 」\`\`\`\n\n@${kice.split("@")[0]} 𝗙𝗼𝗶 𝗲𝘅𝗽𝘂𝗹𝘀𝗼 𝗽𝗼𝗿 𝘂𝘀𝗮𝗿 𝗽𝗮𝗹𝗮𝘃𝗿𝗮𝘀 𝗽𝗿𝗼𝗶𝗯𝗶𝗱𝗮𝘀 𝗻𝗲𝘀𝘁𝗲 𝗴𝗿𝘂𝗽𝗼`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})}
 }
 //antilink youtube video by xeon
 if (AntiLinkYoutubeVid)
 if (budy.includes("https://youtu.be/")){
 if (!isBotAdmins) return
-bvl = `\`\`\`「 YoutTube Video Link Detected 」\`\`\`\n\nO administrador enviou um link de vídeo do youtube, o administrador é livre para enviar qualquer link😇`
+bvl = `\`\`\`「 𝗟𝗶𝗻𝗸 𝗱𝗼 𝗬𝗼𝘂𝘁𝘂𝗯𝗲 𝗗𝗲𝘁𝗲𝗰𝘁𝗮𝗱𝗼 」\`\`\`\n\n𝗢 𝗮𝗱𝗺𝗶𝗻𝗶𝘀𝘁𝗿𝗮𝗱𝗼𝗿 𝗲𝗻𝘃𝗶𝗼𝘂 𝘂𝗺 𝗹𝗶𝗻𝗸 𝗱𝗲 𝘃𝗶́𝗱𝗲𝗼 𝗱𝗼 𝘆𝗼𝘂𝘁𝘂𝗯𝗲, 𝗼 𝗮𝗱𝗺𝗶𝗻𝗶𝘀𝘁𝗿𝗮𝗱𝗼𝗿 𝗲́ 𝗹𝗶𝘃𝗿𝗲 𝗽𝗮𝗿𝗮 𝗲𝗻𝘃𝗶𝗮𝗿 𝗾𝘂𝗮𝗹𝗾𝘂𝗲𝗿 𝗹𝗶𝗻𝗸`
 if (isAdmins) return reply(bvl)
 if (m.key.fromMe) return reply(bvl)
 if (isCreator) return reply(bvl)
 kice = m.sender
 await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
-XeonBotInc.sendMessage(from, {text:`\`\`\`「 YouTube Video Link Detected 」\`\`\`\n\n@${kice.split("@")[0]} Foi expulso por enviar link de vídeo do youtube neste grupo`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+XeonBotInc.sendMessage(from, {text:`\`\`\`「 𝗟𝗶𝗻𝗸 𝗱𝗼 𝗬𝗼𝘂𝘁𝘂𝗯𝗲 𝗗𝗲𝘁𝗲𝗰𝘁𝗮𝗱𝗼 」\`\`\`\n\n@${kice.split("@")[0]} 𝗙𝗼𝗶 𝗲𝘅𝗽𝘂𝗹𝘀𝗼 𝗽𝗼𝗿 𝗲𝗻𝘃𝗶𝗮𝗿 𝗹𝗶𝗻𝗸 𝗱𝗲 𝘃𝗶́𝗱𝗲𝗼 𝗱𝗼 𝘆𝗼𝘂𝘁𝘂𝗯𝗲 𝗻𝗲𝘀𝘁𝗲 𝗴𝗿𝘂𝗽𝗼`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 } else {
 }
 //antilink youtube channel by xeon
 if (AntiLinkYoutubeChannel)
    if (budy.includes("https://youtube.com/")){
 if (!isBotAdmins) return
-bvl = `\`\`\`「 YoutTube Channel Link Detected 」\`\`\`\n\nO administrador enviou um link do canal do youtube, o administrador é livre para enviar qualquer link😇`
+bvl = `\`\`\`「 𝗟𝗶𝗻𝗸 𝗱𝗲 𝗖𝗮𝗻𝗮𝗹 𝗱𝗼 𝗬𝗧 𝗗𝗲𝘁𝗲𝗰𝘁𝗮𝗱𝗼 」\`\`\`\n\n𝗢 𝗮𝗱𝗺𝗶𝗻𝗶𝘀𝘁𝗿𝗮𝗱𝗼𝗿 𝗲𝗻𝘃𝗶𝗼𝘂 𝘂𝗺 𝗹𝗶𝗻𝗸 𝗱𝗼 𝗰𝗮𝗻𝗮𝗹 𝗱𝗼 𝘆𝗼𝘂𝘁𝘂𝗯𝗲, 𝗼 𝗮𝗱𝗺𝗶𝗻𝗶𝘀𝘁𝗿𝗮𝗱𝗼𝗿 𝗲́ 𝗹𝗶𝘃𝗿𝗲 𝗽𝗮𝗿𝗮 𝗲𝗻𝘃𝗶𝗮𝗿 𝗾𝘂𝗮𝗹𝗾𝘂𝗲𝗿 𝗹𝗶𝗻𝗸`
 if (isAdmins) return reply(bvl)
 if (m.key.fromMe) return reply(bvl)
 if (isCreator) return reply(bvl)
 kice = m.sender
 await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
-XeonBotInc.sendMessage(from, {text:`\`\`\`「 YouTube Channel Link Detected 」\`\`\`\n\n@${kice.split("@")[0]} Foi expulso por enviar o link do canal do youtube neste grupo`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+XeonBotInc.sendMessage(from, {text:`\`\`\`「 𝗟𝗶𝗻𝗸 𝗱𝗲 𝗖𝗮𝗻𝗮𝗹 𝗱𝗼 𝗬𝗧 𝗗𝗲𝘁𝗲𝗰𝘁𝗮𝗱𝗼 」\`\`\`\n\n@${kice.split("@")[0]} 𝗙𝗼𝗶 𝗲𝘅𝗽𝘂𝗹𝘀𝗼 𝗽𝗼𝗿 𝗲𝗻𝘃𝗶𝗮𝗿 𝗼 𝗹𝗶𝗻𝗸 𝗱𝗼 𝗰𝗮𝗻𝗮𝗹 𝗱𝗼 𝘆𝗼𝘂𝘁𝘂𝗯𝗲 𝗻𝗲𝘀𝘁𝗲 𝗴𝗿𝘂𝗽𝗼`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 } else {
 }
 //antilink instagram by xeon
 if (AntiLinkInstagram)
    if (budy.includes("https://www.instagram.com/")){
 if (!isBotAdmins) return
-bvl = `\`\`\`「 Instagram Link Detected 」\`\`\`\n\nO administrador enviou um link do instagram, o administrador é livre para enviar qualquer link😇`
+bvl = `\`\`\`「 𝗟𝗶𝗻𝗸 𝗱𝗼 𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺 𝗗𝗲𝘁𝗲𝗰𝘁𝗮𝗱𝗼 」\`\`\`\n\n𝗢 𝗮𝗱𝗺𝗶𝗻𝗶𝘀𝘁𝗿𝗮𝗱𝗼𝗿 𝗲𝗻𝘃𝗶𝗼𝘂 𝘂𝗺 𝗹𝗶𝗻𝗸 𝗱𝗼 𝗶𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺, 𝗼 𝗮𝗱𝗺𝗶𝗻𝗶𝘀𝘁𝗿𝗮𝗱𝗼𝗿 𝗲́ 𝗹𝗶𝘃𝗿𝗲 𝗽𝗮𝗿𝗮 𝗲𝗻𝘃𝗶𝗮𝗿 𝗾𝘂𝗮𝗹𝗾𝘂𝗲𝗿 𝗹𝗶𝗻𝗸`
 if (isAdmins) return reply(bvl)
 if (m.key.fromMe) return reply(bvl)
 if (isCreator) return reply(bvl)
 kice = m.sender
 await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
-XeonBotInc.sendMessage(from, {text:`\`\`\`「 Instagram Link Detected 」\`\`\`\n\n@${kice.split("@")[0]} Foi expulso por enviar link do instagram neste grupo`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+XeonBotInc.sendMessage(from, {text:`\`\`\`「 𝗟𝗶𝗻𝗸 𝗱𝗼 𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺 𝗗𝗲𝘁𝗲𝗰𝘁𝗮𝗱𝗼 」\`\`\`\n\n@${kice.split("@")[0]} 𝗙𝗼𝗶 𝗲𝘅𝗽𝘂𝗹𝘀𝗼 𝗽𝗼𝗿 𝗲𝗻𝘃𝗶𝗮𝗿 𝗹𝗶𝗻𝗸 𝗱𝗼 𝗶𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺 𝗻𝗲𝘀𝘁𝗲 𝗴𝗿𝘂𝗽𝗼`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 } else {
 }
 //antilink facebook by xeon
 if (AntiLinkFacebook)
    if (budy.includes("https://facebook.com/")){
 if (!isBotAdmins) return
-bvl = `\`\`\`「 Facebook Link Detected 」\`\`\`\n\nO administrador enviou um link do facebook, o administrador é livre para enviar qualquer link😇`
+bvl = `\`\`\`「 𝗟𝗶𝗻𝗸 𝗱𝗼 𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸 𝗗𝗲𝘁𝗲𝗰𝘁𝗮𝗱𝗼 」\`\`\`\n\n𝗢 𝗮𝗱𝗺𝗶𝗻𝗶𝘀𝘁𝗿𝗮𝗱𝗼𝗿 𝗲𝗻𝘃𝗶𝗼𝘂 𝘂𝗺 𝗹𝗶𝗻𝗸 𝗱𝗼 𝗳𝗮𝗰𝗲𝗯𝗼𝗼𝗸, 𝗼 𝗮𝗱𝗺𝗶𝗻𝗶𝘀𝘁𝗿𝗮𝗱𝗼𝗿 𝗲́ 𝗹𝗶𝘃𝗿𝗲 𝗽𝗮𝗿𝗮 𝗲𝗻𝘃𝗶𝗮𝗿 𝗾𝘂𝗮𝗹𝗾𝘂𝗲𝗿 𝗹𝗶𝗻𝗸`
 if (isAdmins) return reply(bvl)
 if (m.key.fromMe) return reply(bvl)
 if (isCreator) return reply(bvl)
 kice = m.sender
 await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
-XeonBotInc.sendMessage(from, {text:`\`\`\`「 Facebook Link Detected 」\`\`\`\n\n@${kice.split("@")[0]} Foi expulso por enviar link do facebook neste grupo`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+XeonBotInc.sendMessage(from, {text:`\`\`\`「 𝗟𝗶𝗻𝗸 𝗱𝗼 𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸 𝗗𝗲𝘁𝗲𝗰𝘁𝗮𝗱𝗼 」\`\`\`\n\n@${kice.split("@")[0]} 𝗙𝗼𝗶 𝗲𝘅𝗽𝘂𝗹𝘀𝗼 𝗽𝗼𝗿 𝗲𝗻𝘃𝗶𝗮𝗿 𝗹𝗶𝗻𝗸 𝗱𝗼 𝗳𝗮𝗰𝗲𝗯𝗼𝗼𝗸 𝗻𝗲𝘀𝘁𝗲 𝗴𝗿𝘂𝗽𝗼`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 } else {
 }
 //antilink telegram by xeon
@@ -677,52 +677,52 @@ if (AntiLinkTelegram)
    if (budy.includes("https://t.me/")){
 if (AntiLinkTelegram)
 if (!isBotAdmins) return
-bvl = `\`\`\`「 Telegram Link Detected 」\`\`\`\n\nO administrador enviou um link de telegrama, o administrador é livre para enviar qualquer link😇`
+bvl = `\`\`\`「 𝗟𝗶𝗻𝗸 𝗱𝗼 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺 𝗗𝗲𝘁𝗲𝗰𝘁𝗮𝗱𝗼 」\`\`\`\n\n𝗢 𝗮𝗱𝗺𝗶𝗻𝗶𝘀𝘁𝗿𝗮𝗱𝗼𝗿 𝗲𝗻𝘃𝗶𝗼𝘂 𝘂𝗺 𝗹𝗶𝗻𝗸 𝗱o 𝘁𝗲𝗹𝗲𝗴𝗿𝗮𝗺, 𝗼 𝗮𝗱𝗺𝗶𝗻𝗶𝘀𝘁𝗿𝗮𝗱𝗼𝗿 𝗲́ 𝗹𝗶𝘃𝗿𝗲 𝗽𝗮𝗿𝗮 𝗲𝗻𝘃𝗶𝗮𝗿 𝗾𝘂𝗮𝗹𝗾𝘂𝗲𝗿 𝗹𝗶𝗻𝗸`
 if (isAdmins) return reply(bvl)
 if (m.key.fromMe) return reply(bvl)
 if (isCreator) return reply(bvl)
 kice = m.sender
 await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
-XeonBotInc.sendMessage(from, {text:`\`\`\`「 Telegram Link Detected 」\`\`\`\n\n@${kice.split("@")[0]} Foi expulso por enviar link de telegrama neste grupo`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+XeonBotInc.sendMessage(from, {text:`\`\`\`「 𝗟𝗶𝗻𝗸 𝗱𝗼 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺 𝗗𝗲𝘁𝗲𝗰𝘁𝗮𝗱𝗼 」\`\`\`\n\n@${kice.split("@")[0]} 𝗙𝗼𝗶 𝗲𝘅𝗽𝘂𝗹𝘀𝗼 𝗽𝗼𝗿 𝗲𝗻𝘃𝗶𝗮𝗿 𝗹𝗶𝗻𝗸 𝗱o 𝘁𝗲𝗹𝗲𝗴𝗿𝗮𝗺 𝗻𝗲𝘀𝘁𝗲 𝗴𝗿𝘂𝗽𝗼`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 } else {
 }
 //antilink tiktok by xeon
 if (AntiLinkTiktok)
    if (budy.includes("https://www.tiktok.com/")){
 if (!isBotAdmins) return
-bvl = `\`\`\`「 Tiktok Link Detected 」\`\`\`\n\nO administrador enviou um link do tiktok, o administrador é livre para enviar qualquer link😇`
+bvl = `\`\`\`「 𝗟𝗶𝗻𝗸 𝗱𝗼 𝗧𝗶𝗸𝘁𝗼𝗸 𝗗𝗲𝘁𝗲𝗰𝘁𝗮𝗱𝗼 」\`\`\`\n\n𝗢 𝗮𝗱𝗺𝗶𝗻𝗶𝘀𝘁𝗿𝗮𝗱𝗼𝗿 𝗲𝗻𝘃𝗶𝗼𝘂 𝘂𝗺 𝗹𝗶𝗻𝗸 𝗱𝗼 𝘁𝗶𝗸𝘁𝗼𝗸, 𝗼 𝗮𝗱𝗺𝗶𝗻𝗶𝘀𝘁𝗿𝗮𝗱𝗼𝗿 𝗲́ 𝗹𝗶𝘃𝗿𝗲 𝗽𝗮𝗿𝗮 𝗲𝗻𝘃𝗶𝗮𝗿 𝗾𝘂𝗮𝗹𝗾𝘂𝗲𝗿 𝗹𝗶𝗻𝗸`
 if (isAdmins) return reply(bvl)
 if (m.key.fromMe) return reply(bvl)
 if (isCreator) return reply(bvl)
 kice = m.sender
 await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
-XeonBotInc.sendMessage(from, {text:`\`\`\`「 Tiktok Link Detected 」\`\`\`\n\n@${kice.split("@")[0]} Foi expulso por enviar link do tiktok neste grupo`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+XeonBotInc.sendMessage(from, {text:`\`\`\`「 𝗟𝗶𝗻𝗸 𝗧𝗶𝗸𝘁𝗼𝗸 𝗗𝗲𝘁𝗲𝗰𝘁𝗮𝗱𝗼 」\`\`\`\n\n@${kice.split("@")[0]} 𝗙𝗼𝗶 𝗲𝘅𝗽𝘂𝗹𝘀𝗼 𝗽𝗼𝗿 𝗲𝗻𝘃𝗶𝗮𝗿 𝗹𝗶𝗻𝗸 𝗱𝗼 𝘁𝗶𝗸𝘁𝗼𝗸 𝗻𝗲𝘀𝘁𝗲 𝗴𝗿𝘂𝗽𝗼`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 } else {
 }
 //antilink twitter by xeon
 if (AntiLinkTwitter)
    if (budy.includes("https://twitter.com/")){
 if (!isBotAdmins) return
-bvl = `\`\`\`「 Twitter Link Detected 」\`\`\`\n\nO administrador enviou um link do twitter, o administrador é livre para enviar qualquer link😇`
+bvl = `\`\`\`「 𝗟𝗶𝗻𝗸 𝗧𝘄𝗶𝘁𝘁𝗲𝗿 𝗗𝗲𝘁𝗲𝗰𝘁𝗮𝗱𝗼 」\`\`\`\n\n𝗢 𝗮𝗱𝗺𝗶𝗻𝗶𝘀𝘁𝗿𝗮𝗱𝗼𝗿 𝗲𝗻𝘃𝗶𝗼𝘂 𝘂𝗺 𝗹𝗶𝗻𝗸 𝗱𝗼 𝘁𝘄𝗶𝘁𝘁𝗲𝗿, 𝗼 𝗮𝗱𝗺𝗶𝗻𝗶𝘀𝘁𝗿𝗮𝗱𝗼𝗿 𝗲́ 𝗹𝗶𝘃𝗿𝗲 𝗽𝗮𝗿𝗮 𝗲𝗻𝘃𝗶𝗮𝗿 𝗾𝘂𝗮𝗹𝗾𝘂𝗲𝗿 𝗹𝗶𝗻𝗸`
 if (isAdmins) return reply(bvl)
 if (m.key.fromMe) return reply(bvl)
 if (isCreator) return reply(bvl)
 kice = m.sender
 await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
-XeonBotInc.sendMessage(from, {text:`\`\`\`「 Tiktok Link Detected 」\`\`\`\n\n@${kice.split("@")[0]} Foi expulso por enviar link do twitter neste grupo`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+XeonBotInc.sendMessage(from, {text:`\`\`\`「 𝗟𝗶𝗻𝗸 𝗱𝗼 𝗧𝘄𝗶𝘁𝘁𝗲𝗿 𝗗𝗲𝘁𝗲𝗰𝘁𝗮𝗱𝗼 」\`\`\`\n\n@${kice.split("@")[0]} 𝗙𝗼𝗶 𝗲𝘅𝗽𝘂𝗹𝘀𝗼 𝗽𝗼𝗿 𝗲𝗻𝘃𝗶𝗮𝗿 𝗹𝗶𝗻𝗸 𝗱𝗼 𝘁𝘄𝗶𝘁𝘁𝗲𝗿 𝗻𝗲𝘀𝘁𝗲 𝗴𝗿𝘂𝗽𝗼`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 } else {
 }
 //antilink all by xeon
 if (AntiLinkAll)
    if (budy.includes("https://")){
 if (!isBotAdmins) return
-bvl = `\`\`\`「 Link Detected 」\`\`\`\n\nO administrador enviou um link, o administrador é livre para enviar qualquer link😇`
+bvl = `\`\`\`「 𝗟𝗶𝗻𝗸 𝗗𝗲𝘁𝗲𝗰𝘁𝗮𝗱𝗼 」\`\`\`\n\n𝗢 𝗮𝗱𝗺𝗶𝗻𝗶𝘀𝘁𝗿𝗮𝗱𝗼𝗿 𝗲𝗻𝘃𝗶𝗼𝘂 𝘂𝗺 𝗹𝗶𝗻𝗸, 𝗼 𝗮𝗱𝗺𝗶𝗻𝗶𝘀𝘁𝗿𝗮𝗱𝗼𝗿 𝗲́ 𝗹𝗶𝘃𝗿𝗲 𝗽𝗮𝗿𝗮 𝗲𝗻𝘃𝗶𝗮𝗿 𝗾𝘂𝗮𝗹𝗾𝘂𝗲𝗿 𝗹𝗶𝗻𝗸`
 if (isAdmins) return reply(bvl)
 if (m.key.fromMe) return reply(bvl)
 if (isCreator) return reply(bvl)
 kice = m.sender
 await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
-XeonBotInc.sendMessage(from, {text:`\`\`\`「 Link Detected 」\`\`\`\n\n@${kice.split("@")[0]} Foi expulso por enviar link neste grupo`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+XeonBotInc.sendMessage(from, {text:`\`\`\`「 𝗟𝗶𝗻𝗸 𝗗𝗲𝘁𝗲𝗰𝘁𝗮𝗱𝗼 」\`\`\`\n\n@${kice.split("@")[0]} 𝗙𝗼𝗶 𝗲𝘅𝗽𝘂𝗹𝘀𝗼 𝗽𝗼𝗿 𝗲𝗻𝘃𝗶𝗮𝗿 𝗹𝗶𝗻𝗸 𝗻𝗲𝘀𝘁𝗲 𝗴𝗿𝘂𝗽𝗼`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 } else {
 }
 
@@ -764,11 +764,11 @@ const emoji = new EmojiAPI();
 emoji.get(satu)
 .then(emoji => {
 const buttons = [{buttonId: "y", buttonText: {displayText:satu}, type: 1}]
-const buttonMessage = {image: {url: emoji.images[dua].url},caption: "Aqui está!",footerText: `${botname}`,buttons: buttons,headerType: 4}
+const buttonMessage = {image: {url: emoji.images[dua].url},caption: "𝗔𝗾𝘂𝗶 𝗲𝘀𝘁𝗮́!",footerText: `${botname}`,buttons: buttons,headerType: 4}
 XeonBotInc.sendMessage(from, buttonMessage, {quoted:m})
 })
 } catch (e) {
-reply("Erro de emoji, insira outro emoji\nOBSERVAÇÃO: basta inserir 1 emoji")
+reply("𝗘𝗿𝗿𝗼 𝗱𝗲 𝗲𝗺𝗼𝗷𝗶, 𝗶𝗻𝘀𝗶𝗿𝗮 𝗼𝘂𝘁𝗿𝗼 𝗲𝗺𝗼𝗷𝗶\n𝗢𝗕𝗦: 𝗯𝗮𝘀𝘁𝗮 𝗶𝗻𝘀𝗲𝗿𝗶𝗿 𝟭 𝗲𝗺𝗼𝗷𝗶")
 }
 }
 
@@ -815,12 +815,12 @@ reply("Erro de emoji, insira outro emoji\nOBSERVAÇÃO: basta inserir 1 emoji")
             }
             let isWin = room.terjawab.length === room.terjawab.filter(v => v).length
             let caption = `
-Responda as seguintes perguntas:\n${room.soal}\n\n\nExiste ${room.jawaban.length} Resposta ${room.jawaban.find(v => v.includes(' ')) ? `(Algumas respostas têm espaços)` : ''}
-${isWin ? `All Answers Answered` : isSurender ? 'Surrender!' : ''}
+𝗥𝗲𝘀𝗽𝗼𝗻𝗱𝗮 𝗮𝘀 𝘀𝗲𝗴𝘂𝗶𝗻𝘁𝗲𝘀 𝗽𝗲𝗿𝗴𝘂𝗻𝘁𝗮𝘀:\n${room.soal}\n\n\nExiste ${room.jawaban.length} 𝗥𝗲𝘀𝗽𝗼𝘀𝘁𝗮 ${room.jawaban.find(v => v.includes(' ')) ? `(𝗔𝗹𝗴𝘂𝗺𝗮𝘀 𝗿𝗲𝘀𝗽𝗼𝘀𝘁𝗮𝘀 𝘁𝗲𝗺 𝗲𝘀𝗽𝗮𝗰̧𝗼𝘀)` : ''}
+${isWin ? `𝗧𝗼𝗱𝗮𝘀 𝗽𝗲𝗿𝗴𝘂𝗻𝘁𝗮𝘀 𝗿𝗲𝘀𝗽𝗼𝗻𝗱𝗶𝗱𝗮𝘀` : isSurender ? '𝗥𝗲𝗻𝗱𝗶𝗰̧𝗮̃𝗼!' : ''}
 ${Array.from(room.jawaban, (jawaban, index) => {
         return isSurender || room.terjawab[index] ? `(${index + 1}) ${jawaban} ${room.terjawab[index] ? '@' + room.terjawab[index].split('@')[0] : ''}`.trim() : false
     }).filter(v => v).join('\n')}
-    ${isSurender ? '' : `Perfect Player`}`.trim()
+    ${isSurender ? '' : `𝗣𝗲𝗿𝗳𝗲𝗰𝘁 𝗣𝗹𝗮𝘆𝗲𝗿`}`.trim()
             XeonBotInc.sendText(m.chat, caption, m, { contextInfo: { mentionedJid: parseMention(caption) }}).then(mes => { return _family100['family100'+m.chat].pesan = mesg }).catch(_ => _)
             if (isWin || isSurender) delete _family100['family100'+m.chat]
         }
@@ -1132,27 +1132,27 @@ switch(command) {
  if (isBan) return reply(mess.ban)	 			
 if (!isCreator) return replay(mess.owner)
 if (args[0] === "on") {
-if (isBanChat) return replay('Já banido')
+if (isBanChat) return replay('𝗝𝗮́ 𝗯𝗮𝗻𝗶𝗱𝗼')
 banchat.push(from)
-replay('Sucesso em banir do gp')
+replay('𝗦𝘂𝗰𝗲𝘀𝘀𝗼 𝗲𝗺 𝗯𝗮𝗻𝗶𝗿 𝗼 𝗴𝗿𝘂𝗽𝗼')
 var groupe = await XeonBotInc.groupMetadata(from)
 var members = groupe['participants']
 var mems = []
 members.map(async adm => {
 mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
 })
-XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️Aviso⚠️ 」\`\`\`\n\nO bot foi desabilitado neste grupo, agora ninguém poderá usar o bot!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️𝗔𝘃𝗶𝘀𝗼⚠️ 」\`\`\`\n\n𝗢 𝗯𝗼𝘁 𝗳𝗼𝗶 𝗱𝗲𝘀𝗮𝗯𝗶𝗹𝗶𝘁𝗮𝗱𝗼 𝗻𝗲𝘀𝘁𝗲 𝗴𝗿𝘂𝗽𝗼, 𝗮𝗴𝗼𝗿𝗮 𝗻𝗶𝗻𝗴𝘂𝗲́𝗺 𝗽𝗼𝗱𝗲𝗿𝗮́ 𝘂𝘀𝗮𝗿 𝗼 𝗯𝗼𝘁!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
 } else if (args[0] === "off") {
-if (!isBanChat) return replay('Já desbanido')
+if (!isBanChat) return replay('𝗝𝗮́ 𝗱𝗲𝘀𝗯𝗮𝗻𝗶𝗱𝗼')
 let off = banchat.indexOf(from)
 banchat.splice(off, 1)
-replay('ucesso em desbanir do gp')
+replay('𝗦𝘂𝗰𝗲𝘀𝘀𝗼 𝗲𝗺 𝗱𝗲𝘀𝗯𝗮𝗻𝗶𝗿 𝗼 𝗴𝗿𝘂𝗽𝗼')
 } else {
   let buttonsntnsfw = [
-  { buttonId: `${command} on`, buttonText: { displayText: 'Ban' }, type: 1 },
-  { buttonId: `${command} off`, buttonText: { displayText: 'Unban' }, type: 1 }
+  { buttonId: `${command} on`, buttonText: { displayText: '𝗕𝗮𝗻' }, type: 1 },
+  { buttonId: `${command} off`, buttonText: { displayText: '𝗨𝗻𝗯𝗮𝗻' }, type: 1 }
   ]
-  await XeonBotInc.sendButtonText(m.chat, buttonsntnsfw, `Por favor, clique no botão abaixo\n\nBan\nUnban`, `${global.botname}`, m)
+  await XeonBotInc.sendButtonText(m.chat, buttonsntnsfw, `𝗣𝗼𝗿 𝗳𝗮𝘃𝗼𝗿, 𝗰𝗹𝗶𝗾𝘂𝗲 𝗻𝗼 𝗯𝗼𝘁𝗮̃𝗼 𝗮𝗯𝗮𝗶𝘅𝗼\n\n𝗕𝗮𝗻\n𝗨𝗻𝗯𝗮𝗻`, `${global.botname}`, m)
   }
   }
   break
@@ -1161,7 +1161,7 @@ case 'ban': {
 	   if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (!isCreator) return replay(mess.owner)
-if (!args[0]) return replay(`Selecione add ou del(add para ban, del para unban), Exemplo: responda *${prefix}ban add* para o usuário que você quer banir`)
+if (!args[0]) return replay(`𝗦𝗲𝗹𝗲𝗰𝗶𝗼𝗻𝗲 𝗮𝗱𝗱 𝗼𝘂 𝗱𝗲𝗹(𝗮𝗱𝗱 𝗽𝗮𝗿𝗮 𝗯𝗮𝗻, 𝗱𝗲𝗹 𝗽𝗮𝗿𝗮 𝘂𝗻𝗯𝗮𝗻), 𝗘𝘅𝗲𝗺𝗽𝗹𝗼: 𝗿𝗲𝘀𝗽𝗼𝗻𝗱𝗮 *${prefix}𝗯𝗮𝗻 𝗮𝗱𝗱* 𝗽𝗮𝗿𝗮 𝗼 𝘂𝘀𝘂𝗮́𝗿𝗶𝗼 𝗾𝘂𝗲 𝘃𝗼𝗰𝗲̂ 𝗾𝘂𝗲𝗿 𝗯𝗮𝗻𝗶𝗿`)
 if (args[1]) {
 orgnye = args[1] + "@s.whatsapp.net"
 } else if (m.quoted) {
@@ -1169,11 +1169,11 @@ orgnye = m.quoted.sender
 }
 const isBane = banUser.includes(orgnye)
 if (args[0] === "add") {
-if (isBane) return ads('O usuário já foi banido')
+if (isBane) return ads('𝗢 𝘂𝘀𝘂𝗮́𝗿𝗶𝗼 𝗷𝗮́ 𝗳𝗼𝗶 𝗯𝗮𝗻𝗶𝗱𝗼')
 banUser.push(orgnye)
 replay(`O usuário foi banido com sucesso`)
 } else if (args[0] === "del") {
-if (!isBane) return ads('O usuário já foi desbanido')
+if (!isBane) return ads('𝗢 𝘂𝘀𝘂𝗮́𝗿𝗶𝗼 𝗷𝗮́ 𝗳𝗼𝗶 𝗱𝗲𝘀𝗯𝗮𝗻𝗶𝗱𝗼')
 let delbans = banUser.indexOf(orgnye)
 banUser.splice(delbans, 1)
 replay(`O usuário foi desbanido com sucesso`)
@@ -1852,93 +1852,76 @@ if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { text: `Question : What ${q}\nAnswer : ${kahk}` }, { quoted: m })
 
 					break
-case 'can':
-if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-				if (!text) return replay(`Use Text, Example : ${prefix + command} you fuck her lol `)
-					const bisa = [`Can`,`Can't`,`Cannot`,`Of Course You Can!!!`]
-					const ga = bisa[Math.floor(Math.random() * bisa.length)]
-XeonBotInc.sendMessage(from, { text: `Question : Can ${q}\nAnswer : ${ga}` }, { quoted: m })
+// case 'can':
+// if (isBan) return reply(mess.ban)	 			
+// if (isBanChat) return reply(mess.banChat)
+// 				if (!text) return replay(`Use Text, Example : ${prefix + command} you fuck her lol `)
+// 					const bisa = [`Can`,`Can't`,`Cannot`,`Of Course You Can!!!`]
+// 					const ga = bisa[Math.floor(Math.random() * bisa.length)]
+// XeonBotInc.sendMessage(from, { text: `Question : Can ${q}\nAnswer : ${ga}` }, { quoted: m })
 
-					break
-case 'how':
-if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-				if (!text) return replay(`Use Text, Example : ${prefix + command} is my face`)
-					const gimana = [`It's Okay`, `It's Difficult Bro`, `Sorry Bot Can't Answer`, `Try Searching On Google`,`Holy Cow! Really???`,`Dizzy Ah`,`Ohhh I See:(`,`The Patient, Boss:(`,`How Are You?`]
-					const ya = gimana[Math.floor(Math.random() * gimana.length)]
-XeonBotInc.sendMessage(from, { text: `Question : ${q}\nAnswer : How ${ya}` }, { quoted: m })
+// 					break
+// case 'how':
+// if (isBan) return reply(mess.ban)	 			
+// if (isBanChat) return reply(mess.banChat)
+// 				if (!text) return replay(`Use Text, Example : ${prefix + command} is my face`)
+// 					const gimana = [`It's Okay`, `It's Difficult Bro`, `Sorry Bot Can't Answer`, `Try Searching On Google`,`Holy Cow! Really???`,`Dizzy Ah`,`Ohhh I See:(`,`The Patient, Boss:(`,`How Are You?`]
+// 					const ya = gimana[Math.floor(Math.random() * gimana.length)]
+// XeonBotInc.sendMessage(from, { text: `Question : ${q}\nAnswer : How ${ya}` }, { quoted: m })
 
-					break
-case 'rate':
-if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-				if (!text) return replay(`Use Text, Example : ${prefix + command} My Dp`)
-					const ra = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
-					const te = ra[Math.floor(Math.random() * ra.length)]
-XeonBotInc.sendMessage(from, { text: `Rate : ${q}\nAnswer : *${te}%*` }, { quoted: m })
+// 					break
+// case 'rate':
+// if (isBan) return reply(mess.ban)	 			
+// if (isBanChat) return reply(mess.banChat)
+// 				if (!text) return replay(`Use Text, Example : ${prefix + command} My Dp`)
+// 					const ra = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
+// 					const te = ra[Math.floor(Math.random() * ra.length)]
+// XeonBotInc.sendMessage(from, { text: `Rate : ${q}\nAnswer : *${te}%*` }, { quoted: m })
 
-					break
-  case 'handsomecheck':
-  if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-				if (!text) return replay(`Tag Someone, Example : ${prefix + command} @Xeon`)
-					const gan = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
-					const teng = gan[Math.floor(Math.random() * gan.length)]
-XeonBotInc.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${teng}%*` }, { quoted: m })
+// 					break
+//   case 'handsomecheck':
+//   if (isBan) return reply(mess.ban)	 			
+// if (isBanChat) return reply(mess.banChat)
+// 				if (!text) return replay(`Tag Someone, Example : ${prefix + command} @Xeon`)
+// 					const gan = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
+// 					const teng = gan[Math.floor(Math.random() * gan.length)]
+// XeonBotInc.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${teng}%*` }, { quoted: m })
 
-					break
-case 'beautifulcheck':
-if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-				if (!text) return replay(`Tag Someone, Example : ${prefix + command} @Xeon`)
-					const can = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
-					const tik = can[Math.floor(Math.random() * can.length)]
-XeonBotInc.sendMessage(from, { text: `*${command}*\n\nNama : ${q}\nAnswer : *${tik}%*` }, { quoted: m })
-					break
-					case 'charactercheck':
-					if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-					if (!text) return replay(`Tag Someone, Example : ${prefix + command} @Xeon`)
-					const xeony =['Compassionate','Generous','Grumpy','Forgiving','Obedient','Good','Simp','Kind-Hearted','patient','UwU','top, anyway','Helpful']
-					const taky = xeony[Math.floor(Math.random() * xeony.length)]
-					XeonBotInc.sendMessage(from, { text: `Character Check : ${q}\nAnswer : *${taky}*` }, { quoted: m })
-				     break
-                    case 'awesomecheck':
-  case 'greatcheck':
-    case 'gaycheck':
-      case 'cutecheck':
-        case 'lesbicheck':
-          case 'lesbiancheck':
-             case 'hornycheck':
-                 case 'prettycheck':
-                    case 'lovelycheck':
-                      case 'uglycheck':
-                                  	if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-				if (!text) return replay(`Tag Someone, Example : ${prefix + command} @Xeon`)
-					const sangeh = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
-					const sange = sangeh[Math.floor(Math.random() * sangeh.length)]
-XeonBotInc.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${sange}%*` }, { quoted: m })
-					break
-                    case 'desgraçado':
-      case 'fofo':
-      case 'foda':
-      case 'macaco':
-      case 'nerdola':
-      case 'nerd':
-      case 'lixo':
-      case 'drogado':
-      case 'sexy':
-      case 'viciado':
-      case 'gay':
-      case 'fdp':
-      case 'desajeitado':
-      case 'idiota':
-      case 'puta':
-      case 'otario':
-      case 'playboy':
-      case 'gostoso': {
+// 					break
+// case 'beautifulcheck':
+// if (isBan) return reply(mess.ban)	 			
+// if (isBanChat) return reply(mess.banChat)
+// 				if (!text) return replay(`Tag Someone, Example : ${prefix + command} @Xeon`)
+// 					const can = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
+// 					const tik = can[Math.floor(Math.random() * can.length)]
+// XeonBotInc.sendMessage(from, { text: `*${command}*\n\nNama : ${q}\nAnswer : *${tik}%*` }, { quoted: m })
+// 					break
+// 					case 'charactercheck':
+// 					if (isBan) return reply(mess.ban)	 			
+// if (isBanChat) return reply(mess.banChat)
+// 					if (!text) return replay(`Tag Someone, Example : ${prefix + command} @Xeon`)
+// 					const xeony =['Compassionate','Generous','Grumpy','Forgiving','Obedient','Good','Simp','Kind-Hearted','patient','UwU','top, anyway','Helpful']
+// 					const taky = xeony[Math.floor(Math.random() * xeony.length)]
+// 					XeonBotInc.sendMessage(from, { text: `Character Check : ${q}\nAnswer : *${taky}*` }, { quoted: m })
+// 				     break
+//                     case 'awesomecheck':
+//   case 'greatcheck':
+//     case 'gaycheck':
+//       case 'cutecheck':
+//         case 'lesbicheck':
+//           case 'lesbiancheck':
+//              case 'hornycheck':
+//                  case 'prettycheck':
+//                     case 'lovelycheck':
+//                       case 'uglycheck':
+//                                   	if (isBan) return reply(mess.ban)
+// 	if (isBanChat) return reply(mess.banChat)
+// 				if (!text) return replay(`Tag Someone, Example : ${prefix + command} @Xeon`)
+// 					const sangeh = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
+// 					const sange = sangeh[Math.floor(Math.random() * sangeh.length)]
+// XeonBotInc.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${sange}%*` }, { quoted: m })
+// 					break
+      case 'gay': {
       	            	if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
             if (!m.isGroup) return replay(`${mess.group}`)
@@ -1953,224 +1936,224 @@ XeonBotInc.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${s
                     await XeonBotInc.sendButtonText(m.chat, buttons, jawab, botname, m, {mentions: ments})
             }
             break
-case 'dare':
-                   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-              const dare =[
-    "eat 2 tablespoons of rice without any side dishes, if it's dragging you can drink",
-    "spill people who make you pause",
-    "call crush/pickle now and send ss",
-    "drop only emote every time you type on gc/pc for 1 day.",
-    "say Welcome to Who Wants To Be a Millionaire! to all the groups you have",
-    "call ex saying miss",
-    "sing the chorus of the last song you played",
-    "vn your ex/crush/girlfriend, says hi (name), wants to call, just a moment. I miss🥺👉🏼👈🏼",
-	"Bang on the table (which is at home) until you get scolded for being noisy",
-    "Tell random people _I was just told I was your twin first, we separated, then I had plastic surgery. And this is the most ciyusss_ thing",
-    "mention ex's name",
-    "make 1 rhyme for the members!",
-    "send ur whatsapp chat list",
-    "chat random people with gheto language then ss here",
-    "tell your own version of embarrassing things",
-    "tag the person you hate",
-    "Pretending to be possessed, for example: possessed by dog, possessed by grasshoppers, possessed by refrigerator, etc.",
-    "change name to *I AM DONKEY* for 24 hours",
-    "shout *ma chuda ma chuda ma chuda* in front of your house",
-    "snap/post boyfriend photo/crush",
-    "tell me your boyfriend type!",
-    "say *i hv crush on you, do you want to be my girlfriend?* to the opposite sex, the last time you chatted (submit on wa/tele), wait for him to reply, if you have, drop here",
-    "record ur voice that read *titar ke age do titar, titar ke piche do titar*",
-    "prank chat ex and say *i love u, please come back.* without saying dare!",
-    "chat to contact wa in the order according to your battery %, then tell him *i am lucky to hv you!*",
-    "change the name to *I am a child of randi* for 5 hours",
-    "type in bengali 24 hours",
-    "Use selmon bhoi photo for 3 days",
-    "drop a song quote then tag a suitable member for that quote",
-    "send voice note saying can i call u baby?",
-    "ss recent call whatsapp",
-    "Say *YOU ARE SO BEAUTIFUL DON'T LIE* to guys!",
-    "pop to a group member, and say fuck you",
-    "Act like a chicken in front of ur parents",
-    "Pick up a random book and read one page out loud in vn n send it here",
-    "Open your front door and howl like a wolf for 10 seconds",
-    "Take an embarrassing selfie and paste it on your profile picture",
-    "Let the group choose a word and a well known song. You have to sing that song and send it in voice note",
-    "Walk on your elbows and knees for as long as you can",
-    "sing national anthem in voice note",
-    "Breakdance for 30 seconds in the sitting room😂",
-    "Tell the saddest story you know",
-    "make a twerk dance video and put it on status for 5mins",
-    "Eat a raw piece of garlic",
-    "Show the last five people you texted and what the messages said",
-    "put your full name on status for 5hrs",
-    "make a short dance video without any filter just with a music and put it on ur status for 5hrs",
-    "call ur bestie, bitch",
-    "put your photo without filter on ur status for 10mins",
-    "say i love oli london in voice note🤣🤣",
-    "Send a message to your ex and say I still like you",
-    "call Crush/girlfriend/bestie now and screenshot here",
-    "pop to one of the group member personal chat and Say you ugly bustard",
-    "say YOU ARE BEAUTIFUL/HANDSOME to one of person who is in top of ur pinlist or the first person on ur chatlist",
-    "send voice notes and say, can i call u baby, if u r boy tag girl/if girl tag boy",
-    "write i love you (random grup member name, who is online) in personal chat, (if u r boy write girl name/if girl write boy name) take a snap of the pic and send it here",
-    "use any bollywood actor photo as ur pfp for 3 days",
-    "put your crush photo on status with caption, this is my crush",
-    "change name to I AM GAY for 5 hours",
-    "chat to any contact in whatsapp and say i will be ur bf/gf for 5hours",
-    "send voice note says i hv crush on you, want to be my girlfriend/boyfriend or not? to any random person from the grup(if u girl choose boy, if boy choose girl",
-    "slap ur butt hardly send the sound of slap through voice note😂",
-    "state ur gf/bf type and send the photo here with caption, ugliest girl/boy in the world",
-    "shout bravooooooooo and send here through voice note",
-    "snap your face then send it here",
-    "Send your photo with a caption, i am lesbian",
-    "shout using harsh words and send it here through vn",
-    "shout you bastard in front of your mom/papa",
-    "change the name to i am idiot for 24 hours",
-    "slap urself firmly and send the sound of slap through voice note😂",
-    "say i love the bot owner xeon through voice note",
-    "send your gf/bf pic here",
-    "make any tiktok dance challenge video and put it on status, u can delete it after 5hrs",
-    "breakup with your best friend for 5hrs without telling him/her that its a dare",
-     "tell one of your frnd that u love him/her and wanna marry him/her, without telling him/her that its a dare",
-     "say i love depak kalal through voice note",
-     "write i am feeling horny and put it on status, u can delete it only after 5hrs",
-     "write i am lesbian and put it on status, u can delete only after 5hrs",
-     "kiss your mommy or papa and say i love you😌",
-     "put your father name on status for 5hrs",
-     "send abusive words in any grup, excepting this grup, and send screenshot proof here"
-]
-              const xeondare = dare[Math.floor(Math.random() * dare.length)]
-              buffer = await getBuffer(`https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg`)
-              XeonBotInc.sendMessage(from, { image: buffer, caption: '_You choose DARE_\n'+ xeondare }, {quoted:m})
-              break
-                            break
-       case 'truth':
-       if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-              const truth =[
-    "Have you ever liked anyone? How long?",
-    "If you can or if you want, which gc/outside gc would you make friends with? (maybe different/same type)",
-    "apa ketakutan terbesar kamu?",
-    "Have you ever liked someone and felt that person likes you too?",
-    "What is the name of your friend's ex-girlfriend that you used to secretly like?",
-    "Have you ever stolen money from your father or mom? The reason?",
-    "What makes you happy when you're sad?",
-    "Ever had a one sided love? if so who? how does it feel bro?", 
-    "been someone's mistress?",
-    "the most feared thing",
-    "Who is the most influential person in your life?",
-    "what proud thing did you get this year", 
-    "Who is the person who can make you awesome", 
-    "Who is the person who has ever made you very happy?", 
-    "Who is closest to your ideal type of partner here", 
-    "Who do you like to play with??", 
-    "Have you ever rejected people? the reason why?",
-    "Mention an incident that made you hurt that you still remember", 
-    "What achievements have you got this year??",
-    "What's your worst habit at school??",
-    "What song do you sing most in the shower",
-    "Have you ever had a near-death experience",
-    "When was the last time you were really angry. Why?",
-    "Who is the last person who called you",
-    "Do you have any hidden talents, What are they",
-    "What word do you hate the most?",
-    "What is the last YouTube video you watched?",
-    "What is the last thing you Googled",
-    "Who in this group would you want to swap lives with for a week",
-    "What is the scariest thing thats ever happened to you",
-    "Have you ever farted and blamed it on someone else",
-    "When is the last time you made someone else cry",
-    "Have you ever ghosted a friend",
-    "Have you ever seen a dead body",
-    "Which of your family members annoys you the most and why",
-    "If you had to delete one app from your phone, which one would it be",
-    "What app do you waste the most time on",
-    "Have you ever faked sick to get home from school",
-    "What is the most embarrassing item in your room",
-    "What five items would you bring if you got stuck on a desert island",
-    "Have you ever laughed so hard you peed your pants",
-    "Do you smell your own farts",
-    "have u ever peed on the bed while sleeping ðŸ¤£ðŸ¤£",
-    "What is the biggest mistake you have ever made",
-    "Have you ever cheated in an exam",
-    "What is the worst thing you have ever done",
-    "When was the last time you cried",
-    "whom do you love the most among ur parents", 
-    "do u sometimes put ur finger in ur nosetrilðŸ¤£", 
-    "who was ur crush during the school days",
-    "tell honestly, do u like any boy in this grup",
-    "have you ever liked anyone? how long?",
-    "do you have gf/bf','what is your biggest fear?",
-    "have you ever liked someone and felt that person likes you too?",
-    "What is the name of your ex boyfriend of your friend that you once liked quietly?",
-    "ever did you steal your mothers money or your fathers money",
-    "what makes you happy when you are sad",
-    "do you like someone who is in this grup? if you then who?",
-    "have you ever been cheated on by people?",
-    "who is the most important person in your life",
-    "what proud things did you get this year",
-    "who is the person who can make you happy when u r sad",
-    "who is the person who ever made you feel uncomfortable",
-    "have you ever lied to your parents",
-    "do you still like ur ex",
-    "who do you like to play together with?",
-    "have you ever stolen big thing in ur life? the reason why?",
-    "Mention the incident that makes you hurt that you still remember",
-    "what achievements have you got this year?",
-    "what was your worst habit at school?",
-    "do you love the bot creator, xeon?ðŸ¦„",
-    "have you ever thought of taking revenge from ur teacher?",
-    "do you like current prime minister of ur country",
-    "you non veg or veg",
-    "if you could be invisible, what is the first thing you would do",
-    "what is a secret you kept from your parents",
-    "Who is your secret crush",
-    "whois the last person you creeped on social media",
-    "If a genie granted you three wishes, what would you ask for",
-    "What is your biggest regret",
-    "What animal do you think you most look like",
-    "How many selfies do you take a day",
-    "What was your favorite childhood show",
-    "if you could be a fictional character for a day, who would you choose",
-    "whom do you text the most",
-    "What is the biggest lie you ever told your parents",
-    "Who is your celebrity crush",
-    "Whats the strangest dream you have ever had",
-    "do you play pubg, if you then send ur id number"
-]
-              const xeontruth = truth[Math.floor(Math.random() * truth.length)]
-              buffer = await getBuffer(`https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg`)
-              XeonBotInc.sendMessage(from, { image: buffer, caption: '_You choose TRUTH_\n'+ xeontruth }, {quoted:m})
-              break
-case 'when':
-if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-				if (!text) return replay(`Use Text, Example : ${prefix + command} will i get married `)
-					const kapan = ['5 More Days', '10 More Days', '15 More Days','20 More Days', '25 More Days','30 More Days','35 More Days','40 More Days','45 More Days','50 More Days','55 More Days','60 More Days','65 More Days','70 More Days','75 More Days','80 More Days','85 More Days','90 More Days','100 More Days','5 Months More', '10 Months More', '15 Months More','20 Months More', '25 Months More','30 Months More','35 Months More','40 Months More','45 Months More','50 Months More','55 Months More','60 Months More','65 Months More','70 Months More','75 Months More','80 Months More','85 Months More','90 Months More','100 Months More','1 More Year','2 More Years','3 More Years','4 More Years','5 More Years','Tomorrow','The Day After Tomorrow',`After This Command, You Too ${q}`]
-					const kapankah = kapan[Math.floor(Math.random() * kapan.length)]
-XeonBotInc.sendMessage(from, { text: `Question : ${q}\nAnswer : *${kapankah}*` }, { quoted: m })
-					break
-case 'wangy':
-if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-              if (!text) return replay(`Use Text, Example : ${prefix + command} hinata`)
-              qq = q.toUpperCase()
-              awikwok = `${qq} ${qq} ${qq} ❤️ ❤️ ❤️ WANGY WANGY WANGY WANGY HU HA HU HA HU HA, aaah the smell of hair ${qq} smelly i want to smell the fragrance ${qq} AAAAAAAAH ~ Her hair.... aaah i want to stroke her hair too ~~ AAAAAH ${qq} first time out in anime is cute too ❤️ ❤️ ❤️ so AAAAAAAH ${qq} AAAAAA LUCCUUUUUUUUUUUUU............ ${qq} AAAAAAAAAAAAAAAAAAAAGH ❤️ ❤️ ❤️what ? ${qq} it's not real ? Just HELL you say ? no, no no no no no no no no no no no no no no no !! I DON'T CARE ABOUT THE REALITY, I DON'T CARE. ❤️ ❤️ ❤️ ${qq} me ... ${qq} on the laptop watching me, ${qq} .. you believe in me ? aaaaaaaaaaah thanks ${q} I don't want to give up ${qq} aaaaaah ❤️ ❤️ ❤️ YEAAAAAAAAAAAH I STILL HAVE ${qq} ALSO NOT THE SAME AAAAAAAAAAAAAAH`
-             reply(awikwok)
-              break
-case 'checkdeath':
-if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-             if (!text) return replay(`Use Someone's Name, Example : ${prefix + command} Bot`)
-              predea = await axios.get(`https://api.agify.io/?name=${q}`)
-              reply(`Name : ${predea.data.name}\n*Dead At Age :* ${predea.data.age} Year.\n\n_Quick, Quick, Repent Bro, Because No One Knows About Death_`)
-              break  
+// case 'dare':
+//                    if (isBan) return reply(mess.ban)
+// 	if (isBanChat) return reply(mess.banChat)
+//               const dare =[
+//     "eat 2 tablespoons of rice without any side dishes, if it's dragging you can drink",
+//     "spill people who make you pause",
+//     "call crush/pickle now and send ss",
+//     "drop only emote every time you type on gc/pc for 1 day.",
+//     "say Welcome to Who Wants To Be a Millionaire! to all the groups you have",
+//     "call ex saying miss",
+//     "sing the chorus of the last song you played",
+//     "vn your ex/crush/girlfriend, says hi (name), wants to call, just a moment. I miss🥺👉🏼👈🏼",
+// 	"Bang on the table (which is at home) until you get scolded for being noisy",
+//     "Tell random people _I was just told I was your twin first, we separated, then I had plastic surgery. And this is the most ciyusss_ thing",
+//     "mention ex's name",
+//     "make 1 rhyme for the members!",
+//     "send ur whatsapp chat list",
+//     "chat random people with gheto language then ss here",
+//     "tell your own version of embarrassing things",
+//     "tag the person you hate",
+//     "Pretending to be possessed, for example: possessed by dog, possessed by grasshoppers, possessed by refrigerator, etc.",
+//     "change name to *I AM DONKEY* for 24 hours",
+//     "shout *ma chuda ma chuda ma chuda* in front of your house",
+//     "snap/post boyfriend photo/crush",
+//     "tell me your boyfriend type!",
+//     "say *i hv crush on you, do you want to be my girlfriend?* to the opposite sex, the last time you chatted (submit on wa/tele), wait for him to reply, if you have, drop here",
+//     "record ur voice that read *titar ke age do titar, titar ke piche do titar*",
+//     "prank chat ex and say *i love u, please come back.* without saying dare!",
+//     "chat to contact wa in the order according to your battery %, then tell him *i am lucky to hv you!*",
+//     "change the name to *I am a child of randi* for 5 hours",
+//     "type in bengali 24 hours",
+//     "Use selmon bhoi photo for 3 days",
+//     "drop a song quote then tag a suitable member for that quote",
+//     "send voice note saying can i call u baby?",
+//     "ss recent call whatsapp",
+//     "Say *YOU ARE SO BEAUTIFUL DON'T LIE* to guys!",
+//     "pop to a group member, and say fuck you",
+//     "Act like a chicken in front of ur parents",
+//     "Pick up a random book and read one page out loud in vn n send it here",
+//     "Open your front door and howl like a wolf for 10 seconds",
+//     "Take an embarrassing selfie and paste it on your profile picture",
+//     "Let the group choose a word and a well known song. You have to sing that song and send it in voice note",
+//     "Walk on your elbows and knees for as long as you can",
+//     "sing national anthem in voice note",
+//     "Breakdance for 30 seconds in the sitting room😂",
+//     "Tell the saddest story you know",
+//     "make a twerk dance video and put it on status for 5mins",
+//     "Eat a raw piece of garlic",
+//     "Show the last five people you texted and what the messages said",
+//     "put your full name on status for 5hrs",
+//     "make a short dance video without any filter just with a music and put it on ur status for 5hrs",
+//     "call ur bestie, bitch",
+//     "put your photo without filter on ur status for 10mins",
+//     "say i love oli london in voice note🤣🤣",
+//     "Send a message to your ex and say I still like you",
+//     "call Crush/girlfriend/bestie now and screenshot here",
+//     "pop to one of the group member personal chat and Say you ugly bustard",
+//     "say YOU ARE BEAUTIFUL/HANDSOME to one of person who is in top of ur pinlist or the first person on ur chatlist",
+//     "send voice notes and say, can i call u baby, if u r boy tag girl/if girl tag boy",
+//     "write i love you (random grup member name, who is online) in personal chat, (if u r boy write girl name/if girl write boy name) take a snap of the pic and send it here",
+//     "use any bollywood actor photo as ur pfp for 3 days",
+//     "put your crush photo on status with caption, this is my crush",
+//     "change name to I AM GAY for 5 hours",
+//     "chat to any contact in whatsapp and say i will be ur bf/gf for 5hours",
+//     "send voice note says i hv crush on you, want to be my girlfriend/boyfriend or not? to any random person from the grup(if u girl choose boy, if boy choose girl",
+//     "slap ur butt hardly send the sound of slap through voice note😂",
+//     "state ur gf/bf type and send the photo here with caption, ugliest girl/boy in the world",
+//     "shout bravooooooooo and send here through voice note",
+//     "snap your face then send it here",
+//     "Send your photo with a caption, i am lesbian",
+//     "shout using harsh words and send it here through vn",
+//     "shout you bastard in front of your mom/papa",
+//     "change the name to i am idiot for 24 hours",
+//     "slap urself firmly and send the sound of slap through voice note😂",
+//     "say i love the bot owner xeon through voice note",
+//     "send your gf/bf pic here",
+//     "make any tiktok dance challenge video and put it on status, u can delete it after 5hrs",
+//     "breakup with your best friend for 5hrs without telling him/her that its a dare",
+//      "tell one of your frnd that u love him/her and wanna marry him/her, without telling him/her that its a dare",
+//      "say i love depak kalal through voice note",
+//      "write i am feeling horny and put it on status, u can delete it only after 5hrs",
+//      "write i am lesbian and put it on status, u can delete only after 5hrs",
+//      "kiss your mommy or papa and say i love you😌",
+//      "put your father name on status for 5hrs",
+//      "send abusive words in any grup, excepting this grup, and send screenshot proof here"
+// ]
+//               const xeondare = dare[Math.floor(Math.random() * dare.length)]
+//               buffer = await getBuffer(`https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg`)
+//               XeonBotInc.sendMessage(from, { image: buffer, caption: '_You choose DARE_\n'+ xeondare }, {quoted:m})
+//               break
+//                             break
+//        case 'truth':
+//        if (isBan) return reply(mess.ban)
+// 	if (isBanChat) return reply(mess.banChat)
+//               const truth =[
+//     "Have you ever liked anyone? How long?",
+//     "If you can or if you want, which gc/outside gc would you make friends with? (maybe different/same type)",
+//     "apa ketakutan terbesar kamu?",
+//     "Have you ever liked someone and felt that person likes you too?",
+//     "What is the name of your friend's ex-girlfriend that you used to secretly like?",
+//     "Have you ever stolen money from your father or mom? The reason?",
+//     "What makes you happy when you're sad?",
+//     "Ever had a one sided love? if so who? how does it feel bro?", 
+//     "been someone's mistress?",
+//     "the most feared thing",
+//     "Who is the most influential person in your life?",
+//     "what proud thing did you get this year", 
+//     "Who is the person who can make you awesome", 
+//     "Who is the person who has ever made you very happy?", 
+//     "Who is closest to your ideal type of partner here", 
+//     "Who do you like to play with??", 
+//     "Have you ever rejected people? the reason why?",
+//     "Mention an incident that made you hurt that you still remember", 
+//     "What achievements have you got this year??",
+//     "What's your worst habit at school??",
+//     "What song do you sing most in the shower",
+//     "Have you ever had a near-death experience",
+//     "When was the last time you were really angry. Why?",
+//     "Who is the last person who called you",
+//     "Do you have any hidden talents, What are they",
+//     "What word do you hate the most?",
+//     "What is the last YouTube video you watched?",
+//     "What is the last thing you Googled",
+//     "Who in this group would you want to swap lives with for a week",
+//     "What is the scariest thing thats ever happened to you",
+//     "Have you ever farted and blamed it on someone else",
+//     "When is the last time you made someone else cry",
+//     "Have you ever ghosted a friend",
+//     "Have you ever seen a dead body",
+//     "Which of your family members annoys you the most and why",
+//     "If you had to delete one app from your phone, which one would it be",
+//     "What app do you waste the most time on",
+//     "Have you ever faked sick to get home from school",
+//     "What is the most embarrassing item in your room",
+//     "What five items would you bring if you got stuck on a desert island",
+//     "Have you ever laughed so hard you peed your pants",
+//     "Do you smell your own farts",
+//     "have u ever peed on the bed while sleeping ðŸ¤£ðŸ¤£",
+//     "What is the biggest mistake you have ever made",
+//     "Have you ever cheated in an exam",
+//     "What is the worst thing you have ever done",
+//     "When was the last time you cried",
+//     "whom do you love the most among ur parents", 
+//     "do u sometimes put ur finger in ur nosetrilðŸ¤£", 
+//     "who was ur crush during the school days",
+//     "tell honestly, do u like any boy in this grup",
+//     "have you ever liked anyone? how long?",
+//     "do you have gf/bf','what is your biggest fear?",
+//     "have you ever liked someone and felt that person likes you too?",
+//     "What is the name of your ex boyfriend of your friend that you once liked quietly?",
+//     "ever did you steal your mothers money or your fathers money",
+//     "what makes you happy when you are sad",
+//     "do you like someone who is in this grup? if you then who?",
+//     "have you ever been cheated on by people?",
+//     "who is the most important person in your life",
+//     "what proud things did you get this year",
+//     "who is the person who can make you happy when u r sad",
+//     "who is the person who ever made you feel uncomfortable",
+//     "have you ever lied to your parents",
+//     "do you still like ur ex",
+//     "who do you like to play together with?",
+//     "have you ever stolen big thing in ur life? the reason why?",
+//     "Mention the incident that makes you hurt that you still remember",
+//     "what achievements have you got this year?",
+//     "what was your worst habit at school?",
+//     "do you love the bot creator, xeon?ðŸ¦„",
+//     "have you ever thought of taking revenge from ur teacher?",
+//     "do you like current prime minister of ur country",
+//     "you non veg or veg",
+//     "if you could be invisible, what is the first thing you would do",
+//     "what is a secret you kept from your parents",
+//     "Who is your secret crush",
+//     "whois the last person you creeped on social media",
+//     "If a genie granted you three wishes, what would you ask for",
+//     "What is your biggest regret",
+//     "What animal do you think you most look like",
+//     "How many selfies do you take a day",
+//     "What was your favorite childhood show",
+//     "if you could be a fictional character for a day, who would you choose",
+//     "whom do you text the most",
+//     "What is the biggest lie you ever told your parents",
+//     "Who is your celebrity crush",
+//     "Whats the strangest dream you have ever had",
+//     "do you play pubg, if you then send ur id number"
+// ]
+//               const xeontruth = truth[Math.floor(Math.random() * truth.length)]
+//               buffer = await getBuffer(`https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg`)
+//               XeonBotInc.sendMessage(from, { image: buffer, caption: '_You choose TRUTH_\n'+ xeontruth }, {quoted:m})
+//               break
+// case 'when':
+// if (isBan) return reply(mess.ban)	 			
+// if (isBanChat) return reply(mess.banChat)
+// 				if (!text) return replay(`Use Text, Example : ${prefix + command} will i get married `)
+// 					const kapan = ['5 More Days', '10 More Days', '15 More Days','20 More Days', '25 More Days','30 More Days','35 More Days','40 More Days','45 More Days','50 More Days','55 More Days','60 More Days','65 More Days','70 More Days','75 More Days','80 More Days','85 More Days','90 More Days','100 More Days','5 Months More', '10 Months More', '15 Months More','20 Months More', '25 Months More','30 Months More','35 Months More','40 Months More','45 Months More','50 Months More','55 Months More','60 Months More','65 Months More','70 Months More','75 Months More','80 Months More','85 Months More','90 Months More','100 Months More','1 More Year','2 More Years','3 More Years','4 More Years','5 More Years','Tomorrow','The Day After Tomorrow',`After This Command, You Too ${q}`]
+// 					const kapankah = kapan[Math.floor(Math.random() * kapan.length)]
+// XeonBotInc.sendMessage(from, { text: `Question : ${q}\nAnswer : *${kapankah}*` }, { quoted: m })
+// 					break
+// case 'wangy':
+// if (isBan) return reply(mess.ban)	 			
+// if (isBanChat) return reply(mess.banChat)
+//               if (!text) return replay(`Use Text, Example : ${prefix + command} hinata`)
+//               qq = q.toUpperCase()
+//               awikwok = `${qq} ${qq} ${qq} ❤️ ❤️ ❤️ WANGY WANGY WANGY WANGY HU HA HU HA HU HA, aaah the smell of hair ${qq} smelly i want to smell the fragrance ${qq} AAAAAAAAH ~ Her hair.... aaah i want to stroke her hair too ~~ AAAAAH ${qq} first time out in anime is cute too ❤️ ❤️ ❤️ so AAAAAAAH ${qq} AAAAAA LUCCUUUUUUUUUUUUU............ ${qq} AAAAAAAAAAAAAAAAAAAAGH ❤️ ❤️ ❤️what ? ${qq} it's not real ? Just HELL you say ? no, no no no no no no no no no no no no no no no !! I DON'T CARE ABOUT THE REALITY, I DON'T CARE. ❤️ ❤️ ❤️ ${qq} me ... ${qq} on the laptop watching me, ${qq} .. you believe in me ? aaaaaaaaaaah thanks ${q} I don't want to give up ${qq} aaaaaah ❤️ ❤️ ❤️ YEAAAAAAAAAAAH I STILL HAVE ${qq} ALSO NOT THE SAME AAAAAAAAAAAAAAH`
+//              reply(awikwok)
+//               break
+// case 'checkdeath':
+// if (isBan) return reply(mess.ban)	 			
+// if (isBanChat) return reply(mess.banChat)
+//              if (!text) return replay(`Use Someone's Name, Example : ${prefix + command} Bot`)
+//               predea = await axios.get(`https://api.agify.io/?name=${q}`)
+//               reply(`Name : ${predea.data.name}\n*Dead At Age :* ${predea.data.age} Year.\n\n_Quick, Quick, Repent Bro, Because No One Knows About Death_`)
+//               break  
             case 'join': {
             	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
                 if (!isCreator) return replay(`${mess.owner}`)
-                if (!text) return replay(`Enter The Group Link!`)
-                if (!isUrl(args[0]) && !args[0].includes('whatsapp.com')) return replay(`Invalid Link!`)
+                if (!text) return replay(`𝗘𝗻𝘁𝗿𝗲𝗶 𝗻𝗼 𝗟𝗶𝗻𝗸 𝗱𝗼 𝗚𝗿𝘂𝗽𝗼!`)
+                if (!isUrl(args[0]) && !args[0].includes('whatsapp.com')) return replay(`𝗟𝗶𝗻𝗸 𝗶𝗻𝘃𝗮́𝗹𝗶𝗱𝗼!`)
                 reply(mess.wait)
                 let result = args[0].split('https://chat.whatsapp.com/')[1]
                 await XeonBotInc.groupAcceptInvite(result).then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
@@ -2188,10 +2171,10 @@ if (isBan) return reply(mess.ban)
             	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
                if (!isCreator) return replay(`${mess.owner}`)
-               if (!text) return replay(`Example : ${prefix + command} packname|author`)
+               if (!text) return replay(`𝗘𝘅𝗲𝗺𝗽𝗹𝗼 : ${prefix + command} 𝗽𝗮𝗰𝗸𝗻𝗮𝗺𝗲|𝗮𝘂𝘁𝗵𝗼𝗿`)
           global.packname = text.split("|")[0]
           global.author = text.split("|")[1]
-          reply(`Exif Has Been Successfully Changed to\n\n${themeemoji} Packname : ${global.packname}\n${themeemoji} Author : ${global.author}`)
+          reply(`𝗘𝘅𝗶𝗳 𝗳𝗼𝗶 𝗮𝗹𝘁𝗲𝗿𝗮𝗱𝗼 𝗰𝗼𝗺 𝘀𝘂𝗰𝗲𝘀𝘀𝗼 𝗽𝗮𝗿𝗮\n\n${themeemoji} 𝗣𝗮𝗰𝗸𝗻𝗮𝗺𝗲 : ${global.packname}\n${themeemoji} 𝗔𝘂𝘁𝗵𝗼𝗿 : ${global.author}`)
             }
             break
 	case 'kick': {
@@ -2256,7 +2239,7 @@ if (isBanChat) return reply(mess.banChat)
                 if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) replay(`${mess.admin}`)
-                if (!text) replay(`Where Is The Text?`)
+                if (!text) replay(`𝗖𝗮𝗱𝗲̂ 𝗼 𝘁𝗲𝘅𝘁𝗼?`)
                 await XeonBotInc.groupUpdateSubject(m.chat, text).then((res) => reply(mess.success)).catch((err) => reply(jsonformat(err)))
             }
             break
@@ -2266,7 +2249,7 @@ if (isBanChat) return reply(mess.banChat)
                 if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) replay(`${mess.admin}`)
-                if (!text) replay(`Where Is The Text?`)
+                if (!text) replay(`𝗖𝗮𝗱𝗲̂ 𝗼 𝘁𝗲𝘅𝘁𝗼?`)
                 await XeonBotInc.groupUpdateDescription(m.chat, text).then((res) => reply(mess.success)).catch((err) => reply(jsonformat(err)))
             }
             break
@@ -2274,9 +2257,9 @@ if (isBanChat) return reply(mess.banChat)
           	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
                 if (!isCreator) return replay(`${mess.owner}`)
-                if (!quoted) return replay(`Send/Reply Image With Caption ${prefix + command}`)
-                if (!/image/.test(mime)) return replay(`Send/Reply Image With Caption ${prefix + command}`)
-                if (/webp/.test(mime)) return replay(`Send/Reply Image With Caption ${prefix + command}`)
+                if (!quoted) return replay(`𝗘𝗻𝘃𝗶𝗮𝗿/𝗥𝗲𝘀𝗽𝗼𝗻𝗱𝗲𝗿 𝗶𝗺𝗮𝗴𝗲𝗺 𝗰𝗼𝗺  ${prefix + command}`)
+                if (!/image/.test(mime)) return replay(`𝗘𝗻𝘃𝗶𝗮𝗿/𝗥𝗲𝘀𝗽𝗼𝗻𝗱𝗲𝗿 𝗶𝗺𝗮𝗴𝗲𝗺 𝗰𝗼𝗺  ${prefix + command}`)
+                if (/webp/.test(mime)) return replay(`𝗘𝗻𝘃𝗶𝗮𝗿/𝗥𝗲𝘀𝗽𝗼𝗻𝗱𝗲𝗿 𝗶𝗺𝗮𝗴𝗲𝗺 𝗰𝗼𝗺  ${prefix + command}`)
                 let media = await XeonBotInc.downloadAndSaveMediaMessage(quoted)
                 await XeonBotInc.updateProfilePicture(botNumber, { url: media }).catch((err) => fs.unlinkSync(media))
                 reply(mess.success)
@@ -2287,9 +2270,9 @@ if (isBanChat) return reply(mess.banChat)
 if (isBanChat) return reply(mess.banChat)
                 if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
-                if (!quoted) return replay(`Send/Reply Image With Caption ${prefix + command}`)
-                if (!/image/.test(mime)) return replay(`Send/Reply Image With Caption ${prefix + command}`)
-                if (/webp/.test(mime)) return replay(`Send/Reply Image With Caption ${prefix + command}`)
+                if (!quoted) return replay(`𝗘𝗻𝘃𝗶𝗮𝗿/𝗥𝗲𝘀𝗽𝗼𝗻𝗱𝗲𝗿 𝗶𝗺𝗮𝗴𝗲𝗺 𝗰𝗼𝗺  ${prefix + command}`)
+                if (!/image/.test(mime)) return replay(`𝗘𝗻𝘃𝗶𝗮𝗿/𝗥𝗲𝘀𝗽𝗼𝗻𝗱𝗲𝗿 𝗶𝗺𝗮𝗴𝗲𝗺 𝗰𝗼𝗺  ${prefix + command}`)
+                if (/webp/.test(mime)) return replay(`𝗘𝗻𝘃𝗶𝗮𝗿/𝗥𝗲𝘀𝗽𝗼𝗻𝗱𝗲𝗿 𝗶𝗺𝗮𝗴𝗲𝗺 𝗰𝗼𝗺  ${prefix + command}`)
                 let media = await XeonBotInc.downloadAndSaveMediaMessage(quoted)
                 await XeonBotInc.updateProfilePicture(m.chat, { url: media }).catch((err) => fs.unlinkSync(media))
                 reply(mess.success)
@@ -2301,9 +2284,9 @@ if (isBanChat) return reply(mess.banChat)
                 if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
-let teks = `╚»˙·٠•●♥ Tag All ♥●•٠·˙«╝ 
+let teks = `╚»˙·٠•●♥ 𝗧𝗮𝗴 𝗔𝗹𝗹 ♥●•٠·˙«╝ 
  
- ➲ *Message : ${q ? q : 'no message'}*\n\n`
+ ➲ *𝗠𝗲𝗻𝘀𝗮𝗴𝗲𝗺 : ${q ? q : 'no message'}*\n\n`
                 for (let mem of participants) {
                 teks += `${themeemoji} @${mem.id.split('@')[0]}\n`
                 }
@@ -2325,9 +2308,9 @@ if (isBanChat) return reply(mess.banChat)
 	        if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) //wont response when limit runs out\\
 		db.data.users[m.sender].limit -= 1 // -1 limit
 		let { styletext } = require('./lib/scraper')
-		if (!text) return replay(`Enter Query Text!`)
+		if (!text) return replay(`𝗗𝗶𝗴𝗶𝘁𝗲 𝗼 𝘁𝗲𝘅𝘁𝗼 𝗱𝗮 𝗰𝗼𝗻𝘀𝘂𝗹𝘁𝗮!`)
                 let anu = await styletext(text)
-                let teks = `Entered Text ${text}\n\n`
+                let teks = `𝗧𝗲𝘅𝘁𝗼 𝗶𝗻𝘀𝗲𝗿𝗶𝗱𝗼: ${text}\n\n`
                 for (let i of anu) {
                     teks += `${themeemoji} *${i.name}* : ${i.result}\n\n`
                 }
@@ -2338,32 +2321,32 @@ if (isBanChat) return reply(mess.banChat)
                	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
             if (!m.isGroup) return replay(`${mess.group}`)
-            if (m.chat in vote) replay(`_There Are Still Votes In This Chat!_\n\n*${prefix}delvote* - To Delete Vote Session`)
-            if (!text) return replay(`Enter Reason For Vote, Example: *${prefix + command} Handsome Owner*`)
-            reply(`Voting Starts!\n\n*${prefix}upvote* - For Upvote\n*${prefix}devote* - For Devote\n*${prefix}checkvote* - To Check The Vote\n*${prefix}delvote* - To Delete Vote Session`)
+            if (m.chat in vote) replay(`_𝗔𝗶𝗻𝗱𝗮 𝗵𝗮́ 𝘃𝗼𝘁𝗼𝘀 𝗻𝗲𝘀𝘁𝗲 𝗯𝗮𝘁𝗲-𝗽𝗮𝗽𝗼!_\𝗻\𝗻*${prefix}𝗱𝗲𝗹𝘃𝗼𝘁𝗲* - 𝗣𝗮𝗿𝗮 𝗲𝘅𝗰𝗹𝘂𝗶𝗿 𝗮 𝘀𝗲𝘀𝘀𝗮̃𝗼 𝗱𝗲 𝘃𝗼𝘁𝗮𝗰̧𝗮̃𝗼`)
+            if (!text) return replay(`𝗗𝗶𝗴𝗶𝘁𝗲 𝗼 𝗺𝗼𝘁𝗶𝘃𝗼 𝗱𝗮 𝘃𝗼𝘁𝗮𝗰̧𝗮̃𝗼, 𝗲𝘅𝗲𝗺𝗽𝗹𝗼: *${prefix + command} 𝗧𝗲𝘀𝘁𝗲*`)
+            reply(`𝗔 𝘃𝗼𝘁𝗮𝗰̧𝗮̃𝗼 𝗰𝗼𝗺𝗲𝗰̧𝗮!\𝗻\𝗻*${prefix}𝘂𝗽𝘃𝗼𝘁𝗲* - 𝗣𝗮𝗿𝗮 𝗨𝗽𝘃𝗼𝘁𝗲\𝗻*${prefix}𝗱𝗲𝘃𝗼𝘁𝗲* - 𝗣𝗮𝗿𝗮 𝗗𝗲𝘃𝗼𝘁𝗲\𝗻*${prefix}𝗰𝗵𝗲𝗰𝗸𝘃𝗼𝘁𝗲* - 𝗣𝗮𝗿𝗮 𝘃𝗲𝗿𝗶𝗳𝗶𝗰𝗮𝗿 𝗮 𝘃𝗼𝘁𝗮𝗰̧𝗮̃𝗼\𝗻*${prefix} 𝗱𝗲𝗹𝘃𝗼𝘁𝗲* - 𝗣𝗮𝗿𝗮 𝗲𝘅𝗰𝗹𝘂𝗶𝗿 𝗮 𝘀𝗲𝘀𝘀𝗮̃𝗼 𝗱𝗲 𝘃𝗼𝘁𝗮𝗰̧𝗮̃𝗼`)
             vote[m.chat] = [q, [], []]
             await sleep(1000)
             upvote = vote[m.chat][1]
             devote = vote[m.chat][2]
             teks_vote = `*「 VOTE 」*
 
-*Reason:* ${vote[m.chat][0]}
+*𝗠𝗼𝘁𝗶𝘃𝗼:* ${vote[m.chat][0]}
 
-┌〔 UPVOTE 〕
+┌〔 𝗨𝗣𝗩𝗢𝗧𝗘 〕
 │ 
-┃╠ Total: ${vote[m.chat][1].length}
+┃╠ 𝗧𝗼𝘁𝗮𝗹: ${vote[m.chat][1].length}
 │
 │ 
 └────
 
-┌〔 DEVOTE 〕
+┌〔 𝗗𝗘𝗩𝗢𝗧𝗘 〕
 │ 
-┃╠ Total: ${vote[m.chat][2].length}
+┃╠ 𝗧𝗼𝘁𝗮𝗹: ${vote[m.chat][2].length}
 │
 │ 
 └────
 
-*${prefix}delvote* - To Delete Vote Session`
+*${prefix}𝗱𝗲𝗹𝘃𝗼𝘁𝗲* - 𝗣𝗮𝗿𝗮 𝗱𝗲𝗹𝗲𝘁𝗮𝗿 𝗮 𝘀𝗲𝘀𝘀𝗮̃𝗼`
 let buttonsVote = [
   {buttonId: `${prefix}upvote`, buttonText: {displayText: 'Upvote'}, type: 1},
   {buttonId: `${prefix}devote`, buttonText: {displayText: 'Devote'}, type: 1}
@@ -2382,31 +2365,31 @@ let buttonsVote = [
                	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
             if (!m.isGroup) return replay(`${mess.group}`)
-            if (!(m.chat in vote)) return replay(`_*No Voting In This Group!*_\n\n*${prefix}vote* - To Start Voting`)
+            if (!(m.chat in vote)) return replay(`_*𝗡𝗮̃𝗼 𝗵𝗮́ 𝘃𝗼𝘁𝗮𝗰̧𝗮̃𝗼 𝗻𝗲𝘀𝘁𝗲 𝗴𝗿𝘂𝗽𝗼!*_\𝗻\𝗻*${prefix}𝘃𝗼𝘁𝗲* - 𝗣𝗮𝗿𝗮 𝗰𝗼𝗺𝗲𝗰̧𝗮𝗿 𝗮 𝘃𝗼𝘁𝗮𝗿`)
             isVote = vote[m.chat][1].concat(vote[m.chat][2])
             wasVote = isVote.includes(m.sender)
-            if (wasVote) replay(`You've Voted`)
+            if (wasVote) replay(`𝗩𝗼𝗰𝗲̂ 𝗷𝗮́ 𝘃𝗼𝘁𝗼𝘂`)
             vote[m.chat][1].push(m.sender)
             menvote = vote[m.chat][1].concat(vote[m.chat][2])
-            teks_vote = `*「 VOTE 」*
+            teks_vote = `*「 𝗩𝗢𝗧𝗢 」*
 
-*Reason:* ${vote[m.chat][0]}
+*𝗠𝗼𝘁𝗶𝘃𝗼:* ${vote[m.chat][0]}
 
-┌〔 UPVOTE 〕
+┌〔 𝗨𝗣𝗩𝗢𝗧𝗘 〕
 │ 
-┃╠ Total: ${vote[m.chat][1].length}
+┃╠ 𝗧𝗼𝘁𝗮𝗹: ${vote[m.chat][1].length}
 ${vote[m.chat][1].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
 │ 
 └────
 
-┌〔 DEVOTE 〕
+┌〔 𝗗𝗘𝗩𝗢𝗧𝗘 〕
 │ 
-┃╠ Total: ${vote[m.chat][2].length}
+┃╠ 𝗧𝗼𝘁𝗮𝗹: ${vote[m.chat][2].length}
 ${vote[m.chat][2].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
 │ 
 └────
 
-*${prefix}delvote* - To Delete Vote Session`
+*${prefix}𝗱𝗲𝗹𝘃𝗼𝘁𝗲* - 𝗣𝗮𝗿𝗮 𝗱𝗲𝗹𝗲𝘁𝗮𝗿 𝗮 𝘀𝗲𝘀𝘀𝗮̃𝗼`
             let buttonsUpvote = [
               {buttonId: `${prefix}upvote`, buttonText: {displayText: 'Upvote'}, type: 1},
               {buttonId: `${prefix}devote`, buttonText: {displayText: 'Devote'}, type: 1}
@@ -2426,31 +2409,31 @@ ${vote[m.chat][2].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')
                 	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
             if (!m.isGroup) return replay(`${mess.group}`)
-            if (!(m.chat in vote)) return replay(`_*No Voting In This Group!*_\n\n*${prefix}vote* - To Start Voting`)
+            if (!(m.chat in vote)) return replay(`_*𝗡𝗮̃𝗼 𝗵𝗮́ 𝘃𝗼𝘁𝗮𝗰̧𝗮̃𝗼 𝗻𝗲𝘀𝘁𝗲 𝗴𝗿𝘂𝗽𝗼!*_\𝗻\𝗻*${prefix}𝘃𝗼𝘁𝗲* - 𝗣𝗮𝗿𝗮 𝗰𝗼𝗺𝗲𝗰̧𝗮𝗿 𝗮 𝘃𝗼𝘁𝗮𝗿`)
             isVote = vote[m.chat][1].concat(vote[m.chat][2])
             wasVote = isVote.includes(m.sender)
-            if (wasVote) return replay(`You've Voted`)
+            if (wasVote) return replay(`𝗩𝗼𝗰𝗲̂ 𝗷𝗮́ 𝘃𝗼𝘁𝗼𝘂`)
             vote[m.chat][2].push(m.sender)
             menvote = vote[m.chat][1].concat(vote[m.chat][2])
-            teks_vote = `*「 VOTE 」*
+            teks_vote = `*「 𝗩𝗢𝗧𝗢 」*
 
-*Reason:* ${vote[m.chat][0]}
+*𝗠𝗼𝘁𝗶𝘃𝗼:* ${vote[m.chat][0]}
 
-┌〔 UPVOTE 〕
+┌〔 𝗨𝗣𝗩𝗢𝗧𝗘 〕
 │ 
-┃╠ Total: ${vote[m.chat][1].length}
+┃╠ 𝗧𝗼𝘁𝗮𝗹: ${vote[m.chat][1].length}
 ${vote[m.chat][1].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
 │ 
 └────
 
-┌〔 DEVOTE 〕
+┌〔 𝗗𝗘𝗩𝗢𝗧𝗘 〕
 │ 
-┃╠ Total: ${vote[m.chat][2].length}
+┃╠ 𝗧𝗼𝘁𝗮𝗹: ${vote[m.chat][2].length}
 ${vote[m.chat][2].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
 │ 
 └────
 
-*${prefix}delvote* - To Delete Vote Session`
+*${prefix}𝗱𝗲𝗹𝘃𝗼𝘁𝗲* - 𝗣𝗮𝗿𝗮 𝗱𝗲𝗹𝗲𝘁𝗮𝗿 𝗮 𝘀𝗲𝘀𝘀𝗮̃𝗼`
             let buttonsDevote = [
               {buttonId: `${prefix}upvote`, buttonText: {displayText: 'Upvote'}, type: 1},
               {buttonId: `${prefix}devote`, buttonText: {displayText: 'Devote'}, type: 1}
@@ -2471,26 +2454,26 @@ case 'checkvote':
 if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (!m.isGroup) return replay(`${mess.group}`)
-if (!(m.chat in vote)) return replay(`_*No Voting In This Group!*_\n\n*${prefix}vote* - To Start Voting`)
-teks_vote = `*「 VOTE 」*
+if (!(m.chat in vote)) return replay(`_*𝗡𝗮̃𝗼 𝗵𝗮́ 𝘃𝗼𝘁𝗮𝗰̧𝗮̃𝗼 𝗻𝗲𝘀𝘁𝗲 𝗴𝗿𝘂𝗽𝗼!*_\𝗻\𝗻*${prefix}𝘃𝗼𝘁𝗲* - 𝗣𝗮𝗿𝗮 𝗰𝗼𝗺𝗲𝗰̧𝗮𝗿 𝗮 𝘃𝗼𝘁𝗮𝗿`)
+teks_vote = `*「 𝗩𝗢𝗧𝗢 」*
 
-*Reason:* ${vote[m.chat][0]}
+*𝗠𝗼𝘁𝗶𝘃𝗼:* ${vote[m.chat][0]}
 
-┌〔 UPVOTE 〕
+┌〔 𝗨𝗣𝗩𝗢𝗧𝗘 〕
 │ 
-┃╠ Total: ${upvote.length}
+┃╠ 𝗧𝗼𝘁𝗮𝗹: ${upvote.length}
 ${vote[m.chat][1].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
 │ 
 └────
 
-┌〔 DEVOTE 〕
+┌〔 𝗗𝗘𝗩𝗢𝗧𝗘 〕
 │ 
-┃╠ Total: ${devote.length}
+┃╠ 𝗧𝗼𝘁𝗮𝗹: ${devote.length}
 ${vote[m.chat][2].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
 │ 
 └────
 
-*${prefix}delvote* - To Delete Vote Session
+*${prefix}𝗱𝗲𝗹𝘃𝗼𝘁𝗲* - 𝗣𝗮𝗿𝗮 𝗱𝗲𝗹𝗲𝘁𝗮𝗿 𝗮 𝘀𝗲𝘀𝘀𝗮̃𝗼
 
 
 ©${XeonBotInc.user.id}
@@ -2501,9 +2484,9 @@ break
 			if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
             if (!m.isGroup) return replay(`${mess.group}`)
-            if (!(m.chat in vote)) return replay(`_*No Voting In This Group!*_\n\n*${prefix}vote* - To Start Voting`)
+            if (!(m.chat in vote)) return replay(`_*𝗡𝗮̃𝗼 𝗵𝗮́ 𝘃𝗼𝘁𝗮𝗰̧𝗮̃𝗼 𝗻𝗲𝘀𝘁𝗲 𝗴𝗿𝘂𝗽𝗼!*_\𝗻\𝗻*${prefix}𝘃𝗼𝘁𝗲* - 𝗣𝗮𝗿𝗮 𝗰𝗼𝗺𝗲𝗰̧𝗮𝗿 𝗮 𝘃𝗼𝘁𝗮𝗿`)
             delete vote[m.chat]
-            reply('Successfully Deleted The Vote Session In This Group')
+            reply('𝗔 𝘀𝗲𝘀𝘀𝗮̃𝗼 𝗱𝗲 𝘃𝗼𝘁𝗮𝗰̧𝗮̃𝗼 𝗻𝗲𝘀𝘁𝗲 𝗴𝗿𝘂𝗽𝗼 𝗳𝗼𝗶 𝗲𝘅𝗰𝗹𝘂𝗶́𝗱𝗮 𝗰𝗼𝗺 𝘀𝘂𝗰𝗲𝘀𝘀𝗼')
 	    }
             break
                case 'group': case 'grup': {
@@ -2513,13 +2496,13 @@ if (isBanChat) return reply(mess.banChat)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
                 if (args[0] === 'close'){
-                    await XeonBotInc.groupSettingUpdate(m.chat, 'announcement').then((res) => reply(`Successful Closing The Group`)).catch((err) => reply(jsonformat(err)))
+                    await XeonBotInc.groupSettingUpdate(m.chat, 'announcement').then((res) => reply(`𝗙𝗲𝗰𝗵𝗮𝗻𝗱𝗼 𝗼 𝗚𝗿𝘂𝗽𝗼`)).catch((err) => reply(jsonformat(err)))
                 } else if (args[0] === 'open'){
-                    await XeonBotInc.groupSettingUpdate(m.chat, 'not_announcement').then((res) => reply(`Successful Opening The Group`)).catch((err) => reply(jsonformat(err)))
+                    await XeonBotInc.groupSettingUpdate(m.chat, 'not_announcement').then((res) => reply(`𝗔𝗯𝗿𝗶𝗻𝗱𝗼 𝗼 𝗚𝗿𝘂𝗽𝗼`)).catch((err) => reply(jsonformat(err)))
                 } else {
                 let buttons = [
-                        { buttonId: 'group open', buttonText: { displayText: 'Open' }, type: 1 },
-                        { buttonId: 'group close', buttonText: { displayText: 'Close' }, type: 1 }
+                        { buttonId: 'group open', buttonText: { displayText: '𝗔𝗯𝗿𝗶𝗿' }, type: 1 },
+                        { buttonId: 'group close', buttonText: { displayText: '𝗙𝗲𝗰𝗵𝗮𝗿' }, type: 1 }
                     ]
                     await XeonBotInc.sendButtonText(m.chat, buttons, `Group Mode`, XeonBotInc.user.name, m)
 
@@ -2533,13 +2516,13 @@ if (isBanChat) return reply(mess.banChat)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
              if (args[0] === 'open'){
-                await XeonBotInc.groupSettingUpdate(m.chat, 'unlocked').then((res) => reply(`Successfully Opened Edit Group Info`)).catch((err) => reply(jsonformat(err)))
+                await XeonBotInc.groupSettingUpdate(m.chat, 'unlocked').then((res) => reply(`𝗘𝗱𝗶𝗰̧𝗮̃𝗼 𝗱𝗮𝘀 𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝗰̧𝗼̃𝗲𝘀 𝗱𝗼 𝗴𝗿𝘂𝗽𝗼 𝗮𝗯𝗲𝗿𝘁𝗮`)).catch((err) => reply(jsonformat(err)))
              } else if (args[0] === 'close'){
-                await XeonBotInc.groupSettingUpdate(m.chat, 'locked').then((res) => reply(`Successfully Closed Edit Group Info`)).catch((err) => reply(jsonformat(err)))
+                await XeonBotInc.groupSettingUpdate(m.chat, 'locked').then((res) => reply(`𝗘𝗱𝗶𝗰̧𝗮̃𝗼 𝗱𝗮𝘀 𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝗰̧𝗼̃𝗲𝘀 𝗱𝗼 𝗴𝗿𝘂𝗽𝗼 𝗳𝗲𝗰𝗵𝗮𝗱𝗮`)).catch((err) => reply(jsonformat(err)))
              } else {
              let buttons = [
-                        { buttonId: 'editinfo open', buttonText: { displayText: 'Open' }, type: 1 },
-                        { buttonId: 'editinfo close', buttonText: { displayText: 'Close' }, type: 1 }
+                        { buttonId: 'editinfo open', buttonText: { displayText: '𝗔𝗯𝗿𝗶𝗿' }, type: 1 },
+                        { buttonId: 'editinfo close', buttonText: { displayText: '𝗙𝗲𝗰𝗵𝗮𝗿' }, type: 1 }
                     ]
                     await XeonBotInc.sendButtonText(m.chat, buttons, `Mode Edit Info`, XeonBotInc.user.name, m)
 
@@ -2553,17 +2536,17 @@ if (isBanChat) return reply(mess.banChat)
 if (!m.isGroup) return replay(mess.group)
 if (!isBotAdmins) return reply(mess.botAdmin)
 if (!isAdmins && !isCreator) return reply(mess.admin)
-if (args.length < 1) return reply('type auto sticker on to enable\ntype auto sticker off to disable')
+if (args.length < 1) return reply('𝗗𝗶𝗴𝗶𝘁𝗲 𝗮𝘂𝘁𝗼𝘀𝘁𝗶𝗰𝗸𝗲𝗿 𝗼𝗻 𝗽𝗮𝗿𝗮 𝗮𝘁𝗶𝘃𝗮𝗿\𝗻𝗗𝗶𝗴𝗶𝘁𝗲 𝗮𝘂𝘁𝗼𝘀𝘁𝗶𝗰𝗸𝗲𝗿 𝗼𝗳𝗳 𝗽𝗮𝗿𝗮 𝗱𝗲𝘀𝗮𝘁𝗶𝘃𝗮𝗿')
 if (args[0]  === 'on'){
-if (isAutoSticker) return reply(`Already activated`)
+if (isAutoSticker) return reply(`𝗝𝗮́ 𝗲𝘀𝘁𝗮́ 𝗮𝘁𝗶𝘃𝗼`)
 autosticker.push(from)
 fs.writeFileSync('./database/autosticker.json', JSON.stringify(autosticker))
-reply('autosticker activated')
+reply('𝗔𝘂𝘁𝗼𝘀𝘁𝗶𝗰𝗸𝗲𝗿 𝗮𝘁𝗶𝘃𝗮𝗱𝗼')
 } else if (args[0] === 'off'){
 let anu = autosticker.indexOf(from)
 autosticker.splice(anu, 1)
 fs.writeFileSync('./database/autosticker.json', JSON.stringify(autosticker))
-reply('auto sticker deactivated')
+reply('𝗔𝘂𝘁𝗼𝘀𝘁𝗶𝗰𝗸𝗲𝗿 𝗱𝗲𝘀𝗮𝘁𝗶𝘃𝗮𝗱𝗼')
 }
 break
 case 'autostickerpc':
@@ -2571,17 +2554,17 @@ case 'autostickerpc':
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (!m.isGroup) return replay(mess.group)
-if (args.length < 1) return reply('type autosticker on to activate\ntype autosticker off to disable')
+if (args.length < 1) return reply('𝗗𝗶𝗴𝗶𝘁𝗲 𝗮𝘂𝘁𝗼𝘀𝘁𝗶𝗰𝗸𝗲𝗿 𝗼𝗻 𝗽𝗮𝗿𝗮 𝗮𝘁𝗶𝘃𝗮𝗿\𝗻𝗗𝗶𝗴𝗶𝘁𝗲 𝗮𝘂𝘁𝗼𝘀𝘁𝗶𝗰𝗸𝗲𝗿 𝗼𝗳𝗳 𝗽𝗮𝗿𝗮 𝗱𝗲𝘀𝗮𝘁𝗶𝘃𝗮𝗿')
 if (args[0]  === 'on'){
-if (isAutoStick) return reply(`Already activated`)
+if (isAutoStick) return reply(`𝗝𝗮́ 𝗲𝘀𝘁𝗮́ 𝗮𝘁𝗶𝘃𝗼`)
 _autostick.push(from)
 fs.writeFileSync('./database/autostickpc.json', JSON.stringify(autosticker))
-reply('autosticker pc activated')
+reply('𝗔𝘂𝘁𝗼𝘀𝘁𝗶𝗰𝗸𝗲𝗿 𝗽𝗰 𝗮𝘁𝗶𝘃𝗮𝗱𝗼')
 } else if (args[0] === 'off'){
 let anu = autosticker.indexOf(from)
 _autostick.splice(anu, 1)
 fs.writeFileSync('./database/autostickpc.json', JSON.stringify(autosticker))
-reply('autosticker pc deactivated')
+reply('𝗔𝘂𝘁𝗼𝘀𝘁𝗶𝗰𝗸𝗲𝗿 𝗽𝗰 𝗱𝗲𝘀𝗮𝘁𝗶𝘃𝗮𝗱𝗼')
 }
 break
 case 'antilinkgc': {
@@ -2591,27 +2574,27 @@ if (!m.isGroup) return replay(mess.group)
 if (!isBotAdmins) return replay(mess.botAdmin)
 if (!isAdmins && !isCreator) return replay(mess.admin)
 if (args[0] === "on") {
-if (AntiLink) return replay('Already activated')
+if (AntiLink) return replay('𝗝𝗮́ 𝗲𝘀𝘁𝗮́ 𝗮𝘁𝗶𝘃𝗼')
 ntilink.push(from)
-replay('Success in turning on group chat antilink in this group')
+replay('𝗢 𝗮𝗻𝘁𝗶𝗹𝗶𝗻𝗸 𝗲𝘀𝘁𝗮́ 𝗮𝘁𝗶𝘃𝗼 𝗻𝗲𝘀𝘁𝗲 𝗴𝗿𝘂𝗽𝗼')
 var groupe = await XeonBotInc.groupMetadata(from)
 var members = groupe['participants']
 var mems = []
 members.map(async adm => {
 mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
 })
-XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️Warning⚠️ 」\`\`\`\n\nIf you're not an admin, don't send the group link in this group or u will be kicked immediately`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️𝗔𝘃𝗶𝘀𝗼⚠️ 」\`\`\`\n\n𝗦𝗲 𝘃𝗼𝗰𝗲̂ 𝗻𝗮̃𝗼 𝗳𝗼𝗿 𝘂𝗺 𝗮𝗱𝗺𝗶𝗻𝗶𝘀𝘁𝗿𝗮𝗱𝗼𝗿, 𝗻𝗮̃𝗼 𝗲𝗻𝘃𝗶𝗲 𝗼 𝗹𝗶𝗻𝗸 𝗱𝗼 𝗴𝗿𝘂𝗽𝗼 𝗮𝗾𝘂𝗶 𝗼𝘂 𝘃𝗼𝗰𝗲̂ 𝘀𝗲𝗿𝗮́ 𝗲𝘅𝗽𝘂𝗹𝘀𝗼 𝗶𝗺𝗲𝗱𝗶𝗮𝘁𝗮𝗺𝗲𝗻𝘁𝗲`, contextInfo: { mentionedJid : mems }}, {quoted:m})
 } else if (args[0] === "off") {
-if (!AntiLink) return replay('Already deactivated')
+if (!AntiLink) return replay('𝗝𝗮́ 𝗲𝘀𝘁𝗮́ 𝗱𝗲𝘀𝗮𝘁𝗶𝘃𝗮𝗱𝗼')
 let off = ntilink.indexOf(from)
 ntilink.splice(off, 1)
-replay('Success in turning off group chat antilink in this group')
+replay('𝗢 𝗮𝗻𝘁𝗶𝗹𝗶𝗻𝗸 𝗳𝗼𝗶 𝗱𝗲𝘀𝗮𝘁𝗶𝘃𝗮𝗱𝗼 𝗻𝗲𝘀𝘁𝗲 𝗴𝗿𝘂𝗽𝗼')
 } else {
   let buttonsntilink = [
   { buttonId: `${command} on`, buttonText: { displayText: 'On' }, type: 1 },
   { buttonId: `${command} off`, buttonText: { displayText: 'Off' }, type: 1 }
   ]
-  await XeonBotInc.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.botname}`, m)
+  await XeonBotInc.sendButtonText(m.chat, buttonsntilink, `𝗖𝗹𝗶𝗾𝘂𝗲 𝗻𝗼 𝗯𝗼𝘁𝗮̃𝗼 𝗮𝗯𝗮𝗶𝘅𝗼\n\n𝗢𝗻 𝗽𝗮𝗿𝗮 𝗮𝘁𝗶𝘃𝗮𝗿\n𝗢𝗳𝗳 𝗽𝗮𝗿𝗮 𝗱𝗲𝘀𝗮𝘁𝗶𝘃𝗮𝗿`, `${global.botname}`, m)
   }
   }
   break
@@ -2622,27 +2605,27 @@ if (!m.isGroup) return replay(mess.group)
 if (!isBotAdmins) return replay(mess.botAdmin)
 if (!isAdmins && !isCreator) return replay(mess.admin)
 if (args[0] === "on") {
-if (AntiLinkYoutubeVid) return replay('Already activated')
+if (AntiLinkYoutubeVid) return replay('𝗝𝗮́ 𝗲𝘀𝘁𝗮́ 𝗮𝘁𝗶𝘃𝗼')
 ntilinkytvid.push(from)
-replay('Success in turning on youtube video antilink in this group')
+replay('𝗦𝘂𝗰𝗲𝘀𝘀𝗼 𝗲𝗺 𝗮𝘁𝗶𝘃𝗮𝗿 𝗼 𝗮𝗻𝘁𝗶𝗹𝗶𝗻𝗸 𝗱𝗲 𝘃𝗶́𝗱𝗲𝗼 𝗱𝗼 𝘆𝗼𝘂𝘁𝘂𝗯𝗲 𝗻𝗲𝘀𝘁𝗲 𝗴𝗿𝘂𝗽𝗼')
 var groupe = await XeonBotInc.groupMetadata(from)
 var members = groupe['participants']
 var mems = []
 members.map(async adm => {
 mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
 })
-XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️Warning⚠️ 」\`\`\`\n\nIf you're not an admin, don't send the youtube video link in this group or u will be kicked immediately!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️𝗔𝘃𝗶𝘀𝗼⚠️ 」\`\`\`\n\n𝗦𝗲 𝘃𝗼𝗰𝗲̂ 𝗻𝗮̃𝗼 𝗳𝗼𝗿 𝘂𝗺 𝗮𝗱𝗺𝗶𝗻𝗶𝘀𝘁𝗿𝗮𝗱𝗼𝗿, 𝗻𝗮̃𝗼 𝗲𝗻𝘃𝗶𝗲 𝗼 𝗹𝗶𝗻𝗸 𝗱𝗼 𝘃𝗶́𝗱𝗲𝗼 𝗱𝗼 𝘆𝗼𝘂𝘁𝘂𝗯𝗲 𝗻𝗲𝘀𝘁𝗲 𝗴𝗿𝘂𝗽𝗼 𝗼𝘂 𝘃𝗼𝗰𝗲̂ 𝘀𝗲𝗿𝗮́ 𝗲𝘅𝗽𝘂𝗹𝘀𝗼 𝗶𝗺𝗲𝗱𝗶𝗮𝘁𝗮𝗺𝗲𝗻𝘁𝗲!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
 } else if (args[0] === "off") {
-if (!AntiLinkYoutubeVid) return replay('Already deactivated')
+if (!AntiLinkYoutubeVid) return replay('𝗝𝗮́ 𝗲𝘀𝘁𝗮́ 𝗱𝗲𝘀𝗮𝘁𝗶𝘃𝗮𝗱𝗼')
 let off = ntilinkytvid.indexOf(from)
 ntilinkytvid.splice(off, 1)
-replay('Success in turning off youtube video antilink in this group')
+replay('𝗦𝘂𝗰𝗲𝘀𝘀𝗼 𝗮𝗼 𝗱𝗲𝘀𝗮𝘁𝗶𝘃𝗮𝗿 𝗼 𝗮𝗻𝘁𝗶𝗹𝗶𝗻𝗸 𝗱𝗲 𝘃𝗶́𝗱𝗲𝗼 𝗱𝗼 𝘆𝗼𝘂𝘁𝘂𝗯𝗲 𝗻𝗲𝘀𝘁𝗲 𝗴𝗿𝘂𝗽𝗼')
 } else {
   let buttonsntilink = [
   { buttonId: `${command} on`, buttonText: { displayText: 'On' }, type: 1 },
   { buttonId: `${command} off`, buttonText: { displayText: 'Off' }, type: 1 }
   ]
-  await XeonBotInc.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.botname}`, m)
+  await XeonBotInc.sendButtonText(m.chat, buttonsntilink, `𝗖𝗹𝗶𝗾𝘂𝗲 𝗻𝗼 𝗯𝗼𝘁𝗮̃𝗼 𝗮𝗯𝗮𝗶𝘅𝗼\n\n𝗢𝗻 𝗽𝗮𝗿𝗮 𝗮𝘁𝗶𝘃𝗮𝗿\n𝗢𝗳𝗳 𝗽𝗮𝗿𝗮 𝗱𝗲𝘀𝗮𝘁𝗶𝘃𝗮𝗿`, `${global.botname}`, m)
   }
   }
   break
