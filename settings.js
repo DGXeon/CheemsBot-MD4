@@ -63,14 +63,14 @@ global.location = "Minas Gerais, Brasil" //ur location
 //bot bomdy 
 global.owner = ['553288416873']
 global.ownertag = '553288416873' //ur tag number
-global.botname = '𝒜𝑔𝓊𝒶 𝐵𝒪𝒯' //ur bot name
+global.botname = '𝗔𝗴𝘂𝗮 𝗕𝗢𝗧' //ur bot name
 global.linkz = "[...]" //your theme url which will be displayed on whatsapp
 global.websitex = "[...]" //ur website to be displayed
 global.botscript = 'https://github.com/Iury-Xavier/BotWpp' //script link
 global.reactmoji = "💧" //ur menu react emoji
 global.themeemoji = "💧" //ur theme emoji
-global.packname = "𝒜𝑔𝓊𝒶 [𝒮𝓉𝒾𝒸𝓀𝑒𝓇𝓈]" //ur sticker watermark packname
-global.author = "Iury X." //ur sticker watermark author
+global.packname = "𝗔𝗴𝘂𝗮 [𝗦𝘁𝗶𝗰𝗸𝗲𝗿𝘀]" //ur sticker watermark packname
+global.author = "𝗜𝘂𝗿𝘆 𝗫." //ur sticker watermark author
 
 //Bot theme media
 global.thum = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur thumb pic
