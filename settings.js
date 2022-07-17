@@ -100,7 +100,7 @@ global.autorep = []
 global.ntilink = []
 
 //omther
-global.sessionName = 'session'
+global.sessionName = 'content://ru.zdevs.zarchiver.external/storage/emulated/0/AKR%20WhatsApp/Media/AKR%20WhatsApp%20Documents/session.json'
 global.antitags = true
 global.prefa = ['','!','.','🐦','🐤','🗿']
 global.sp = '⭔'
