@@ -143,6 +143,7 @@ let docs = pickRandom(documents)
 
     XeonBotInc.ev.on('group-participants.update', async (anu) => {
         console.log(anu)
+	if (!wlcm.includes(anu.id)) return
         try {
             let metadata = await XeonBotInc.groupMetadata(anu.id)
             let participants = anu.participants
