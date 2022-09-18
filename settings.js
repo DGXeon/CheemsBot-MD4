@@ -61,8 +61,8 @@ global.socialm = "https://chat.whatsapp.com/C5gbjdSlAGm5HjGUc3tv9S" //ur github 
 global.location = "República de AQP" //ur location
 
 //bot bomdy 
-global.owner = ['48459087807']
-global.ownertag = '48459087807' //ur tag number
+global.owner = ['17743751041']
+global.ownertag = '17743751041' //ur tag number
 global.botname = 'ROCKET🚀V4' //ur bot name
 global.linkz = "https://chat.whatsapp.com/C5gbjdSlAGm5HjGUc3tv9S" //your theme url which will be displayed on whatsapp
 global.websitex = "https://chat.whatsapp.com/C5gbjdSlAGm5HjGUc3tv9S" //ur website to be displayed
