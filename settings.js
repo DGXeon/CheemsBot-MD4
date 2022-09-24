@@ -54,15 +54,15 @@ global.doc5 = 'application/pdf'
 global.doc6 = 'application/vnd.android.package-archive'
 
 //owmner v card
-global.vcardowner = ['91829212115'] //ur owner number
-global.ownername = "👀ansari" //ur owner name
+global.vcardowner = ['919267936126'] //ur owner number
+global.ownername = "👀DAREDEVIL" //ur owner name
 global.ytname = "YT: Xeon" //ur yt chanel name
 global.socialm = "GitHub: DGXeon" //ur github or insta name
 global.location = "India, Mizoram, Aizawl" //ur location
 
 //bot bomdy 
-global.owner = ['918292121115']
-global.ownertag = '918292121115' //ur tag number
+global.owner = ['919267936126']
+global.ownertag = '919267936126' //ur tag number
 global.botname = 'Alien-Ware' //ur bot name
 global.linkz = "https://github.com/Knowladge-hunter/CheemsBot-MD4" //your theme url which will be displayed on whatsapp
 global.websitex = "https://github.com/Knowladge-hunter/CheemsBot-MD4" //ur website to be displayed
@@ -70,7 +70,7 @@ global.botscript = 'https://github.com/Knowladge-hunter/CheemsBot-MD4' //script 
 global.reactmoji = "🌚" //ur menu react emoji
 global.themeemoji = "👀" //ur theme emoji
 global.packname = "Cheems Bot Stickers\n\n\n\n\n\n\n\n\n\n\n🌚🌚🌚 " //ur sticker watermark packname
-global.author = "👀ansari" //ur sticker watermark author
+global.author = "👀DAREDEVIL" //ur sticker watermark author
 
 //Bot theme media
 global.thum = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur thumb pic
