@@ -64,13 +64,13 @@ global.location = "República de AQP" //ur location
 global.owner = ['15069841319']
 global.ownertag = '15069841319' //ur tag number
 global.botname = 'ROCKET🚀V4' //ur bot name
-global.linkz = "https://chat.whatsapp.com/C5gbjdSlAGm5HjGUc3tv9S" //your theme url which will be displayed on whatsapp
+global.linkz = "https://chat.whatsapp.com/HG6JTVNR5vnGZHKHcA4zJ6" //your theme url which will be displayed on whatsapp
 global.websitex = "https://chat.whatsapp.com/HG6JTVNR5vnGZHKHcA4zJ6" //ur website to be displayed
 global.botscript = 'https://chat.whatsapp.com/HG6JTVNR5vnGZHKHcA4zJ6' //script link
 global.reactmoji = "🚀" //ur menu react emoji
 global.themeemoji = "🚀" //ur theme emoji
-global.packname = "Ⓥⓘⓖⓖⓞ\n\n\n\n\n\n\n\n\n\n\nTodo lo que alguna vez deseaste está del otro lado del miedo" //ur sticker watermark packname
-global.author = "Ⓥⓘⓖⓖⓞ" //ur sticker watermark author
+global.packname = "©Ⓥⓘⓖⓖⓞ\n\n\n\n\n\n\n\n\n\n\nTodo lo que alguna vez deseaste está del otro lado del miedo" //ur sticker watermark packname
+global.author = "©Ⓥⓘⓖⓖⓞ" //ur sticker watermark author
 
 //Bot theme media
 global.thum = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur thumb pic
