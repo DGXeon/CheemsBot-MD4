@@ -56,17 +56,17 @@ global.doc6 = 'application/vnd.android.package-archive'
 //owmner v card
 global.vcardowner = ['51931263982'] //ur owner number
 global.ownername = "Viggo Tarasov" //ur owner name
-global.ytname = "https://chat.whatsapp.com/C5gbjdSlAGm5HjGUc3tv9S" //ur yt chanel name
+global.ytname = "https://chat.whatsapp.com/HG6JTVNR5vnGZHKHcA4zJ6" //ur yt chanel name
 global.socialm = "https://chat.whatsapp.com/C5gbjdSlAGm5HjGUc3tv9S" //ur github or insta name
 global.location = "República de AQP" //ur location
 
 //bot bomdy 
-global.owner = ['522285262918']
-global.ownertag = '522285262918' //ur tag number
+global.owner = ['15069841319']
+global.ownertag = '15069841319' //ur tag number
 global.botname = 'ROCKET🚀V4' //ur bot name
 global.linkz = "https://chat.whatsapp.com/C5gbjdSlAGm5HjGUc3tv9S" //your theme url which will be displayed on whatsapp
-global.websitex = "https://chat.whatsapp.com/C5gbjdSlAGm5HjGUc3tv9S" //ur website to be displayed
-global.botscript = 'https://chat.whatsapp.com/C5gbjdSlAGm5HjGUc3tv9S' //script link
+global.websitex = "https://chat.whatsapp.com/HG6JTVNR5vnGZHKHcA4zJ6" //ur website to be displayed
+global.botscript = 'https://chat.whatsapp.com/HG6JTVNR5vnGZHKHcA4zJ6' //script link
 global.reactmoji = "🚀" //ur menu react emoji
 global.themeemoji = "🚀" //ur theme emoji
 global.packname = "Ⓥⓘⓖⓖⓞ\n\n\n\n\n\n\n\n\n\n\nTodo lo que alguna vez deseaste está del otro lado del miedo" //ur sticker watermark packname
