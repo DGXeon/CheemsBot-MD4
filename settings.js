@@ -69,7 +69,7 @@ global.websitex = "https://chat.whatsapp.com/CCaUn821f9kAeykkaJU94j" //ur websit
 global.botscript = 'https://chat.whatsapp.com/CCaUn821f9kAeykkaJU94j' //script link
 global.reactmoji = "🚀" //ur menu react emoji
 global.themeemoji = "🚀" //ur theme emoji
-global.packname = "Ⓥⓘⓖⓖⓞ\n\n\n\n\n\n\n\n\n\n\nTodo lo que alguna vez deseaste está del otro lado del miedo" //ur sticker watermark packname
+global.packname = "Ⓥⓘⓖⓖⓞ\n\n\n\nTodo lo que alguna vez deseaste está del otro lado del miedo" //ur sticker watermark packname
 global.author = "Ⓥⓘⓖⓖⓞ" //ur sticker watermark author
 
 //Bot theme media
@@ -102,7 +102,7 @@ global.ntilink = []
 //omther
 global.sessionName = 'session'
 global.antitags = true
-global.prefa = ['','!','.','🐦','🐤','🗿']
+global.prefa = ['','.','🐦','🐤','🗿']
 global.sp = '⭔'
 global.mess = {
     success: 'Echo✓',
