@@ -1,0 +1,436 @@
+{
+  "creds": {
+    "noiseKey": {
+      "private": {
+        "type": "Buffer",
+        "data": "4KdWUTnjQHhdgj9U8rdNn/9IaUQ7mpOIVpM8oLvw1H8="
+      },
+      "public": {
+        "type": "Buffer",
+        "data": "DHCUI9sasnAmtAIhu7PIg+uWRLNe7W1kcL0gxvwDWkI="
+      }
+    },
+    "signedIdentityKey": {
+      "private": {
+        "type": "Buffer",
+        "data": "gM1EWiHj50NAIxG9RBhsaXrFRWhIRkDIOWON+7mvUV8="
+      },
+      "public": {
+        "type": "Buffer",
+        "data": "V8KkW+hBPMk/e4AZNlrt0xufp/pud81lGqOEHFFXBkc="
+      }
+    },
+    "signedPreKey": {
+      "keyPair": {
+        "private": {
+          "type": "Buffer",
+          "data": "8IsRlOmahYxsGcIOz3ae+n0KjuX+GeyGZMLnvWrt3lY="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "PCU3bzTbqD5YvhLcHCTohgqmsm189V4MhTTsaxrboWg="
+        }
+      },
+      "signature": {
+        "type": "Buffer",
+        "data": "Gj5MqyE69Reaz9FiR4c7r7++NEy2rTH8Wjl/F5e17GkfmPM7ev5GmVmcdhZxHmw2dBIKc50Zrc0RfyRuUQ+uDA=="
+      },
+      "keyId": 1
+    },
+    "registrationId": 132,
+    "advSecretKey": "261s8nYiNPsIAyH+WTW6IpVzbcVpHhW1LUevLF8U4+4=",
+    "nextPreKeyId": 31,
+    "firstUnuploadedPreKeyId": 31,
+    "serverHasPreKeys": true,
+    "account": {
+      "details": "CO+okPIDEOnJ76EGGAE=",
+      "accountSignatureKey": "hjoXeWToHj0N9xiQ/nHPhoNdQqTa/gyQDS8ITr9vPXM=",
+      "accountSignature": "FAotE15CzUIzTxIFVPfV13M3CKDhRAhJiwIn8B1QxT0gYNk/biGusiHJANFXdEohFW+2hfX5UKFAO0ZaQ+nBCA==",
+      "deviceSignature": "U3NtL7gIKfE0DeIbpV8HH9B1VF6x4q1knzuaxpnw0pZcCplx5qFBsaRL2jdC2anZ0AZ4nO0VXX4bdbXaxv/FAg=="
+    },
+    "me": {
+      "id": "254762065033:95@s.whatsapp.net",
+      "verifiedName": "Gabby Bot",
+      "name": "Gabby Bot"
+    },
+    "signalIdentities": [
+      {
+        "identifier": {
+          "name": "254762065033:95@s.whatsapp.net",
+          "deviceId": 0
+        },
+        "identifierKey": {
+          "type": "Buffer",
+          "data": "BYY6F3lk6B49DfcYkP5xz4aDXUKk2v4MkA0vCE6/bz1z"
+        }
+      }
+    ],
+    "lastAccountSyncTimestamp": 1681646829,
+    "myAppStateKeyId": "AAAAACmL"
+  },
+  "keys": {
+    "preKeys": {
+      "1": {
+        "private": {
+          "type": "Buffer",
+          "data": "+PYBilEYB8O/iuqmiTAcJSdZBWx7JJOzj4M4k37WJGE="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "kAn7Fypd8yi3vJBOe5jh76l+7xMNGhIzRRjbTmMX1ik="
+        }
+      },
+      "2": {
+        "private": {
+          "type": "Buffer",
+          "data": "EHdtr7PqO3wIFFwfSWbQRX+UYuyV2IU30UZ+i/AqpVU="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "lDkBwKBPO2qyxoDxSN2SPpE/LpT3+a4ZsBka2iHp/Sg="
+        }
+      },
+      "3": null,
+      "4": {
+        "private": {
+          "type": "Buffer",
+          "data": "2FQrWm13lCl1YcZltvEDl80aXymwTNSCd5qu7v8vbnI="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "WRoaQ3cNKlNtMr8gqYs00BTk3oOxukFbA5oq94fwZSY="
+        }
+      },
+      "5": {
+        "private": {
+          "type": "Buffer",
+          "data": "mAI/AAcnxmIxWxwac447QWxdY7uMOzDiagpvwCyKKkk="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "NSDhF/lx0+7g+MBuNWAFC2ptDTwPg2gb1blLPm7YoQs="
+        }
+      },
+      "6": {
+        "private": {
+          "type": "Buffer",
+          "data": "UIm+jZTL+DBCWRDNOnzRbqXsODVezs0fY9DsevRjyWI="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "3laQuVSi06xtxDDa9LFpTdMW/g5SXscLoR+R40ePQG0="
+        }
+      },
+      "7": {
+        "private": {
+          "type": "Buffer",
+          "data": "UJLsmmItYzwR1QTDappS+HCRgk6752ieLYr2j9Ei114="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "xAJdqd74kQwp4hWjkqzKACBzsZ+3dH9QayNfYocpdG0="
+        }
+      },
+      "8": {
+        "private": {
+          "type": "Buffer",
+          "data": "eHLBq+VymV7E7iLZVWbkhIpwfrf0dXCelDQfhR2QEFU="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "IQEOpq5PoHNxNDq0rG3pMzUn27x2zV1AyS0msU6EOxM="
+        }
+      },
+      "9": {
+        "private": {
+          "type": "Buffer",
+          "data": "CKc/t/xfA5IfiNAJt47FdDxcpKugsuV0t8njQpczrHs="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "MT+0eqkr27qoR9MJfQZn8Z3BXUOX24IbFsMn/bJ6STg="
+        }
+      },
+      "10": {
+        "private": {
+          "type": "Buffer",
+          "data": "aN09903haULLYVWP0OMrpbkyHTTVdYr5FDWRGt15o1w="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "HsVgwsRL0qRPsRCPpb+pjZ9g5VnFW0n+9S4g3BEhlhQ="
+        }
+      },
+      "11": {
+        "private": {
+          "type": "Buffer",
+          "data": "wPdvftkmjAqikaDkDE6rxxKDs7ZCuQj0qKUYnIMJ7nY="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "TUzOAqpB+BVUI2z8hHQy3ARCERKBlkmxEo03rSlAlgc="
+        }
+      },
+      "12": {
+        "private": {
+          "type": "Buffer",
+          "data": "CFoUXcm61SCTpGRRQn4Ua/gWkDGwNAfWeXpnrQxlnVY="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "0jr4hQD/qBPG2Rg6YufzauEqbFxyKFOdmzWghAbO+hk="
+        }
+      },
+      "13": {
+        "private": {
+          "type": "Buffer",
+          "data": "iLVYqypuHQTBk+bRthUM71Zc+6WzcImlcR1nlrmP7lA="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "eumGQcmOhZq6mb8B8QPLRekWBgbU50BeoMumJHUOZxY="
+        }
+      },
+      "14": {
+        "private": {
+          "type": "Buffer",
+          "data": "IFOoYnFc3ITILF/moFwHRFQkKj4QhuejmSREK42kP1E="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "eTYb4VzaYxz3whPLzbliPL1Gg9+TrBVOwo0jZ8yHEhY="
+        }
+      },
+      "15": {
+        "private": {
+          "type": "Buffer",
+          "data": "2Isy0X07Bd3893c9BeUw2h2Wv6EcM/X4AGTM+N3m9ns="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "ZckW1RmVMlvRz6y/AHcdnL1rgYZSh/3zwthCxrutJ08="
+        }
+      },
+      "16": {
+        "private": {
+          "type": "Buffer",
+          "data": "cBQKLhopkgsY9hvRdXrgcFljJxsMUgxykTgfqN0zGFw="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "4SwdaojEbmisul1Uu0+LFpw5J20xPE0CI5pt4MX86Ro="
+        }
+      },
+      "17": {
+        "private": {
+          "type": "Buffer",
+          "data": "oMoVDbmzsM1RxLHu5+Ol4VrMVsgDxM/Oo4n3ootnzW0="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "v+v50Lkq1Uqj5xBcq0gxR1bYIhfW8CiRSrdclnrSBEc="
+        }
+      },
+      "18": {
+        "private": {
+          "type": "Buffer",
+          "data": "2OTOkUKUCEgaJ0ZbJyE8JdH2MtC3FqsDckCIrnk1ZH0="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "x4r4dTsMC6cre1czb3y93seWhJwDrndlGM08ggRTlG8="
+        }
+      },
+      "19": {
+        "private": {
+          "type": "Buffer",
+          "data": "yKmnchnBooSiLdnS/34HMhoTk1OBDrt+2xYHhGXD42k="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "ncjfRk3I64fKwgW3B8s+Jjsk95tY+a8jdtSRs0voPUg="
+        }
+      },
+      "20": {
+        "private": {
+          "type": "Buffer",
+          "data": "IPGSWz458NZmMB3Dk10/Ug1QSLpUDFNdyZyXLazLO0A="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "EMkGpLxc16Hj+xxmXeuLwo4zC7JBAKS86m5M6pW2PRM="
+        }
+      },
+      "21": {
+        "private": {
+          "type": "Buffer",
+          "data": "CAnH8RYyLvWLns7FTiG7VIJID1IfUtHLtqQomGWLvX8="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "wZ408EXfls+hcfIycF4mG+wU/EY+Euap/vq/SqWGrzI="
+        }
+      },
+      "22": {
+        "private": {
+          "type": "Buffer",
+          "data": "mLMV4dLGEUAc7MF8VwEK7J6Vuvor0UlVFMUffcAxamM="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "18oDzYGFe76WqaZzTCEunYr7hz8ouDioNPcdToHLEhg="
+        }
+      },
+      "23": {
+        "private": {
+          "type": "Buffer",
+          "data": "yJHqeV35IfovM57a/0m0rIjD1bkX6sXIRvp6QNVlsUc="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "SqQRRQZzhshNmMA/3abznsRWi6BOoWKFfAjfmQ+BYx8="
+        }
+      },
+      "24": {
+        "private": {
+          "type": "Buffer",
+          "data": "cK8jaSUCmxJLf75m27YmrQ/YUohaMx58T9P2nw8U/3w="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "eYuqef4Gr1a+P/DxpyHJF4Zna+Uyz4FqEzfy9UNhSxk="
+        }
+      },
+      "25": {
+        "private": {
+          "type": "Buffer",
+          "data": "qLj60eb6Br39kL2AM65FWu+OzlBhFeH2UNrcaZhHw0Q="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "323rdVp685YmFHqSRhqnwqPkz8mlNl5/Wo8JazxLDCI="
+        }
+      },
+      "26": {
+        "private": {
+          "type": "Buffer",
+          "data": "SOx/7OUpP8FmNEW4IWOZ1m7yHpzzm9dIDkRRFnQ3e2w="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "jcbMbmE1xDZyu/g/VVX25M1+KuVzx81JR9AAFNpH30U="
+        }
+      },
+      "27": {
+        "private": {
+          "type": "Buffer",
+          "data": "CNDl7XKY7kMAGnA+5id1yRne7iMAC0Vaw3gdsU3WGmw="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "OHN9BgQRjWyFrSpV4i+EWfkcW4Jw35AsX1MPdibm6TA="
+        }
+      },
+      "28": {
+        "private": {
+          "type": "Buffer",
+          "data": "+GfIXhPFe/M2Rg4CTWhrTr5EAhdVldVsYtQz5Qfm9W8="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "dZbVr/wFqgaIjA2zbaqpoFeaBY7a+OShDky3coBNMUQ="
+        }
+      },
+      "29": {
+        "private": {
+          "type": "Buffer",
+          "data": "GCvvafI6VtaGNHPCE6CeoXF1NZoXvD+TzozD97FZDW4="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "77G7pDEB1T7c8d3zuZuG94ZKdKe2e44RQvEWRXMgLxc="
+        }
+      },
+      "30": {
+        "private": {
+          "type": "Buffer",
+          "data": "OEYSbDI1fP4iVwt2lKE3nk6pBNgGdJtvntLsXp0Fl0c="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "dK7zSXMXbcofCdUV4iupnmZ+bKTBMMw71mTcH2Uqano="
+        }
+      }
+    },
+    "sessions": {
+      "254762065033.0": {
+        "_sessions": {
+          "Bel8r3JK11hztwXUtNFo3Eiw4DowSZpqmNtDtpltDvZJ": {
+            "registrationId": 1255844373,
+            "currentRatchet": {
+              "ephemeralKeyPair": {
+                "pubKey": "BdH080/V7YcsxVGV0iQnFUxExM0OGNMhW3pufCBwD89I",
+                "privKey": "0KMpN0samJ5s5fzG8VZd7ADqdj1EUmFlAGyyeZL1v2E="
+              },
+              "lastRemoteEphemeralKey": "BRNUlQ8O8edHd0l9h0/aQJgQim7kW4J6TrLMUfdG8yRa",
+              "previousCounter": 0,
+              "rootKey": "eRU2CxoOO1GciWA4TLTxA/17lo3PdxwFBzPXPgkPyjs="
+            },
+            "indexInfo": {
+              "baseKey": "Bel8r3JK11hztwXUtNFo3Eiw4DowSZpqmNtDtpltDvZJ",
+              "baseKeyType": 2,
+              "closed": -1,
+              "used": 1681646831687,
+              "created": 1681646831687,
+              "remoteIdentityKey": "BYY6F3lk6B49DfcYkP5xz4aDXUKk2v4MkA0vCE6/bz1z"
+            },
+            "_chains": {
+              "BRNUlQ8O8edHd0l9h0/aQJgQim7kW4J6TrLMUfdG8yRa": {
+                "chainKey": {
+                  "counter": 1,
+                  "key": "1NhVxoMKNoemaKRm0+XPG5P3BXQZBmsB6SxWsRmXAGU="
+                },
+                "chainType": 2,
+                "messageKeys": {}
+              },
+              "BdH080/V7YcsxVGV0iQnFUxExM0OGNMhW3pufCBwD89I": {
+                "chainKey": {
+                  "counter": -1,
+                  "key": "qH1fxIxew2doquAP5d3wyBpuVtkz0LgetOBlRl822yc="
+                },
+                "chainType": 1,
+                "messageKeys": {}
+              }
+            }
+          }
+        },
+        "version": "v1"
+      }
+    },
+    "appStateSyncKeys": {
+      "AAAAACmK": {
+        "keyData": "HoLrnjMJvpGK7PdXhs3bgPWEh/j40/eKUVz4GZHQeTI=",
+        "fingerprint": {
+          "rawId": 1044649070,
+          "currentIndex": 1,
+          "deviceIndexes": [
+            0,
+            1
+          ]
+        },
+        "timestamp": "0"
+      },
+      "AAAAACmL": {
+        "keyData": "RGFuAsN/ZeEzBASGhIEoYNWQ1GN2BwOgnJNuElnl2Hk=",
+        "fingerprint": {
+          "rawId": 1044649070,
+          "currentIndex": 1,
+          "deviceIndexes": [
+            0
+          ]
+        },
+        "timestamp": "1681646765490"
+      }
+    }
+  }
+}
